@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Animations>
+
+  <!-- Joint -->
+  <Animation action="JointBumpIdle" actionindex="0" filename="G-F_2walking_bump_idle_bump_back_2_Male.fbx" start="6" end="200" />
+  <!--Unfinished - needs finger animation-->
+
+  <Animation action="JointMaleSearcherExaminesFemaleStandingDefeatedA" actionindex="0" filename="G-D_searcher_raises_head_of_standing_defeated_5_male.fbx" start="11" end="700" cue="GD raises h standing d 5" cuestart="155" />
+  <Animation action="JointMaleSearcherExaminesFemaleStandingDefeatedB" actionindex="0" filename="G-D_searcher_raises_head_of_standing_defeated_4_male.fbx" start="6" end="494" />
+  <Animation action="JointFemaleSearcherExaminesMaleSittingDefeated" actionindex="0" filename="G-D_searcher_raises_head_of_defeated_5_male.fbx" start="6" end="1052" cue="GD raises h defeated 5" cuestart="95" />
+
+  <!--This character is the one being bumped - from behind, he then does a violent outburst-->
+  <Animation action="JointSearcherBumpStandingSearcher" actionindex="0" filename="G-D_searcher_bumps_standing_searcher_3_male.fbx" start="6" end="346" cue="searcher bumps standing 3" cuestart="79"/>
+  <Animation action="JointMaleSearcherBumpStandingFemaleSearcher" actionindex="0" filename="G-F_searcher_bumps_standing_searcher_2_male.fbx" start="6" end="390"/>
+  <Animation action="JointMaleSearcherBumpSquattingFemaleSearcher" actionindex="0" filename="G-F_searcher_bumps_squatting_searcher_2_male.fbx" start="6" end="350" />
+
+  <!--This one's the male behind the female-->
+  <Animation action="JointSexFromBehind" actionindex="0" filename="G-F_sex1_2_male.fbx" start="6" end="580" cue="g+f sex scene2" cuestart="6" comment="sound synced"/>
+  <Animation action="JointSexFromFront" actionindex="0" filename="G-F_sex1_4_male.fbx" start="6" end="517" cue="g+f sex scene 4" cuestart="6" comment="sound synced"/>
+  <Animation action="JointSexGrapple" actionindex="0" filename="G-D_sex1_10_male.fbx" start="6" end="752" cue="g+d sex 10" cuestart="6" comment="sound synced"/>
+
+  <!-- Defeated-->
+  <Animation action="DefeatedWalkOnPerimeter" actionindex="0" filename="gerard_male_defeated_walk1_CLEAN.fbx" start="6" end="798"  />
+  <Animation action="DefeatedWalkOnPerimeter" actionindex="0" filename="gerard_male_defeated_walk2_CLEAN.fbx" start="6" end="1043" />
+  <Animation action="DefeatedWalkOnPerimeter" actionindex="2" filename="gerard_male_defeated_walk2_CLEAN.fbx" start="6" end="1043" />
+
+  <Animation action="DefeatedWanderThroughSearcherZone" actionindex="0" filename="gerard_male_defeated_walk1_CLEAN.fbx" start="6" end="798"  />
+  <Animation action="DefeatedWanderThroughSearcherZone" actionindex="2" filename="gerard_male_defeated_walk1_CLEAN.fbx" start="6" end="798"  />
+
+  <Animation action="DefeatedIdle" actionindex="0" filename="gerard_male_sway_1_CLEAN.fbx" start="6" end="543" blendstart="2.0"/>
+
+  <Animation skip="true" action="DefeatedIdle" actionindex="0" filename="gerard_male_searcher_indian_file_idle_agitated_2_CLEAN.fbx" start="6" end="388" blendstart="2.0"/>
+  <Animation skip="true" action="DefeatedIdle" actionindex="0" filename="gerard_male_standing_hiding_face_1_CLEAN.fbx" start="6" end="320" blendstart="3.0"/>
+  <Animation skip="true" action="DefeatedIdle" actionindex="0" filename="gerard_male_standing_hiding_face_2_CLEAN.fbx" start="6" end="423" blendstart="3.0"/>
+
+  <Animation action="DefeatedStandToStandPostureA" actionindex="0" filename="gerard_male_standing_hiding_face_1_CLEAN.fbx" start="6" end="140" />
+  <Animation action="DefeatedStandPostureALoop" actionindex="0" filename="gerard_male_standing_hiding_face_1_CLEAN.fbx" start="140" end="207" lockbase="true" blendstart="1.0"/>
+  <Animation action="DefeatedStandPostureAToStand" actionindex="0" filename="gerard_male_standing_hiding_face_1_CLEAN.fbx" start="177" end="320" />
+
+  <Animation action="DefeatedStandToStandPostureB" actionindex="0" filename="gerard_male_standing_hiding_face_2_CLEAN.fbx" start="6" end="166" lockbase="true" blendstart="0.01"/>
+  <Animation action="DefeatedStandPostureBLoop" actionindex="0" filename="gerard_male_standing_hiding_face_2_CLEAN.fbx" start="166" end="590" lockbase="true" blendstart="1.0"/>
+  <Animation action="DefeatedStandPostureBToStand" actionindex="0" filename="gerard_male_standing_hiding_face_2_CLEAN.fbx" start="590" end="770" />
+
+  <Animation action="DefeatedTurnLeft45" actionindex="0" filename="gerard_male_turnleft_1_CLEAN.fbx" start="6" end="173" />
+  <Animation action="DefeatedTurnLeft90" actionindex="0" filename="gerard_male_turnleft_2_CLEAN.fbx" start="6" end="158" />
+  <Animation action="DefeatedTurnLeft135" actionindex="0" filename="gerard_male_turnleft_3_CLEAN.fbx" start="6" end="175" />
+  <Animation action="DefeatedTurnLeft180" actionindex="0" filename="gerard_male_turnleft_4_CLEAN.fbx" start="6" end="174" />
+  <Animation action="DefeatedTurnRight45" actionindex="0" filename="gerard_male_turnright_1_CLEAN.fbx" start="6" end="143" />
+  <Animation action="DefeatedTurnRight90" actionindex="0" filename="gerard_male_turnright_2_CLEAN.fbx" start="6" end="164"/>
+  <Animation action="DefeatedTurnRight135" actionindex="0" filename="gerard_male_turnright_3_CLEAN.fbx" start="6" end="186" />
+  <Animation action="DefeatedTurnRight180" actionindex="0" filename="gerard_male_turnright_4_CLEAN.fbx" start="6" end="174" />
+
+  <Animation action="DefeatedStandToSit" actionindex="0" filename="gerard_male_defeated_stand_to_sit_2_CLEAN.fbx" start="8" end="1153" lockbase="true" blendstart="1.0"/>
+  <Animation action="DefeatedSit" actionindex="0" filename="gerard_male_defeated_stand_to_sit_2_CLEAN.fbx" start="1123" end="1183" blendstart="1.0" lockbase="true"/>
+  <Animation action="DefeatedSitToStand" actionindex="0" filename="gerard_male_defeated_stand_to_sit_2_reverse.fbx" start="36" end="1170" />
+  <Animation action="DefeatedStandUpToWalk" actionindex="0" filename="gerard_male_defeated_stand_to_sit_2_reverse.fbx" start="36" end="1170" />
+
+  <Animation action="DefeatedMaleSeatedWaitToBeExamined" actionindex="0" filename="G-D_searcher_raises_head_of_defeated_5_male.fbx" start="1050" end="1500" blendstart="1.5" lockbase="true"/>
+  
+  <Animation action="DefeatedIdleWaitForExamination" actionindex="0" filename="gerard_male_searcher_idle_6_CLEAN.fbx" start="6" end="133" blendstart="2.0"/>
+  <Animation action="DefeatedSitIdleWaitForExamination" actionindex="0" filename="gerard_male_defeated_stand_to_sit_2_CLEAN.fbx" start="1123" end="1183" blendstart="1.0" lockbase="true"/>
+  <Animation action="DefeatedSitToStandWaitForExamination"  actionindex="0" filename="gerard_male_defeated_stand_to_sit_2_reverse.fbx" start="36" end="1170" />
+
+  <!-- New Searchers -->
+  <!-- Active zone behaviour -->
+  <Animation action="SearcherOuterStage1"     actionindex="0" filename="Gerard_Outer_Male_facing_Out_anti-clockwise_90_facing_Out_1_CLEAN.fbx" start="10" end="772"/>
+  <Animation action="SearcherOuterStage2"     actionindex="0" filename="Gerard_Outer_Male_facing_Out_clockwise_60_facing_In_3_CLEAN.fbx" start="10" end="550" blendstart="0.2"/>
+  <Animation action="SearcherOuterStage3"     actionindex="0" filename="Gerard_Outer_Male_facing_In_anti-clockwise_90_facing_Out_2_CLEAN.fbx" start="10" end="724" />
+  <Animation action="SearcherOutToIn" actionindex="0" filename="Gerard_Outer_Male_facing_Out_transition_to_Inner_facing_out_1_CLEAN.fbx" start="10" end="510" />
+  <Animation action="SearcherInnerStage1" actionindex="0" filename="Gerard_Inner_Male_facing_Out_anti-clockwise_90_facing_Out_1_CLEAN.fbx" start="10" end="645"/>
+  <Animation action="SearcherInnerStage2" actionindex="0" filename="Gerard_Inner_Male_facing_Out_clockwise_60_facing_In_1_CLEAN.fbx" start="10" end="393"/>
+  <Animation action="SearcherInnerStage3" actionindex="0" filename="Gerard_Inner_Male_facing_In_anti-clockwise_90_facing_Out1_CLEAN.fbx" start="10" end="553" />
+  <Animation action="SearcherInToOut" actionindex="0" filename="Gerard_Inner_Male_facing_Out_transition_to_Outer_facing_out_4_CLEAN.fbx" start="10" end="695" />
+
+  <!-- Hitself behaviour -->
+  <Animation action="SearcherStandingHitSelf" actionindex="0" filename="Gerard_Male_Beating_Self_1_CLEAN.fbx" start="10" end="174" cue="male searcher beating self 1" cuestart="44" comment="uml2 ok"/>
+  <Animation action="SearcherWalkingHitSelf"  actionindex="0" filename="Gerard_Male_Beating_Self_10_CLEAN.fbx" start="10" end="194" cue="male searcher beating self 10" cuestart="90" comment="uml2 ok"/>
+  <Animation action="SearcherStandingHitSelf"  actionindex="0" filename="Gerard_Male_Beating_Self_7_CLEAN.fbx" start="10" end="134" cue="male searcher beating self 7" cuestart="45" comment="uml2 ok"/>
+  <Animation action="SearcherStandingHitSelf" actionindex="0" filename="gerard_male_searcher_hitself_2_CLEAN.fbx" start="6" end="543" cue="male searcher hitself 2" cuestart="83" comment="sound synced and Jeffrey wants to remove"/>
+  <Animation action="SearcherStandingHitSelf" actionindex="0" filename="gerard_male_searcher_hitself_4_CLEAN.fbx" start="6" end="182" cue="male searcher hitself 4" cuestart="75" comment="sound synced"/>
+
+  <Animation action="SearcherReturnToActiveZone" actionindex="0" filename="gerard_male_searcher_indian_file_walk_9_CLEAN.fbx" start="6" end="252" playback="0.7" blendstart="0.3"/>
+  <Animation action="SearcherReturnToActiveZoneLoop" actionindex="0" filename="gerard_male_searcher_indian_file_walk_9_CLEAN.fbx" start="121" end="252" moving="true" playback="0.7" blendstart="0.3"/>
+
+  <Animation action="SearcherSedentaryIdleWaitForViolence" actionindex="0" filename="gerard_male_searcher_idle_6_CLEAN.fbx" start="6" end="133" blendstart="2.0"/>
+  <Animation action="SearcherSedentarySquatIdleWaitForViolence" actionindex="0" filename="gerard_male_searcher_squat3_CLEAN.fbx" start="6" end="951" blendstart="2.0"/>
+  <Animation action="SearcherSedentarySquatToStandWaitForViolence"  actionindex="0" filename="gerard_male_searcher_transition_4_CLEAN.fbx" start="6" end="140" blendstart="2.0"/>
+
+  <Animation skip="true" action="SearcherIndianFileWalkCircle1"  actionindex="0" filename="Gerard_Indian_File_Male_2_CLEAN.fbx" start="23" end="688" blendstart="0.1"/>
+  <Animation skip="true" action="SearcherIndianFileWalkCircle"  actionindex="0" filename="Gerard_Indian_File_Male_3_CLEAN.fbx" start="23" end="694" blendstart="0.2"/>
+
+  <!-- Searchers -->
+  <Animation action="SearcherTempIdle" actionindex="0" filename="gerard_male_searcher_idle_3_CLEAN.fbx" start="6" end="678" blendstart="2.0"/>
+  <Animation action="SearcherIdle" actionindex="0" filename="gerard_male_searcher_idle_3_CLEAN.fbx" start="6" end="161" blendstart="2.0"/>
+  <Animation action="SearcherIdle" actionindex="0" filename="gerard_male_searcher_idle_6_CLEAN.fbx" start="6" end="133" blendstart="2.0"/>
+  <Animation action="SearcherIdle1" actionindex="0" filename="gerard_male_searcher_idle_3_CLEAN.fbx" start="6" end="678" blendstart="2.0"/>
+  <Animation action="SearcherIdle1" actionindex="0" filename="gerard_male_searcher_idle_6_CLEAN.fbx" start="6" end="696" blendstart="2.0"/>
+
+  <!-- Short idle sequence to tween to bindpose int the DebugServerAudio mode-->
+  <Animation action="SearcherAudioSettingIdle" actionindex="0" filename="gerard_male_searcher_idle_3_CLEAN.fbx" start="6" end="30" blendstart="0.2"/>
+  <Animation action="SearcherAudioSettingIdle" actionindex="1" filename="gerard_male_searcher_idle_3_CLEAN.fbx" start="6" end="30" blendstart="0.2"/>
+
+  <Animation action="SearcherActiveWalk" actionindex="0" filename="gerard_male_searcher_indian_file_walk_9_CLEAN.fbx" start="6" end="208" playback="1.0" blendstart="0.3"/>
+  <Animation action="SearcherActiveWalkLoop" actionindex="0" filename="gerard_male_searcher_indian_file_walk_9_CLEAN.fbx" start="103" end="208" moving="true" playback="0.75" blendstart="0.3"/>
+  <Animation action="SearcherActiveWalkLoop" actionindex="0" filename="gerard_male_searcher_indian_file_walk_9_CLEAN.fbx" start="103" end="208" moving="true" playback="0.7" blendstart="0.3"/>
+  <Animation action="SearcherActiveWalkLoop" actionindex="0" filename="gerard_male_searcher_indian_file_walk_9_CLEAN.fbx" start="103" end="208" moving="true" playback="0.65" blendstart="0.3"/>
+  <Animation action="SearcherActiveWalkLoop" actionindex="0" filename="gerard_male_searcher_indian_file_walk_9_CLEAN.fbx" start="103" end="208" moving="true" playback="0.6" blendstart="0.3"/>
+  <Animation action="SearcherActiveWalk1" filename="gerard_male_searcher_walk_7_CLEAN.fbx" start="6" end="166" blendstart="0.5" playback="0.7"/>
+  <Animation action="SearcherActiveWalkLoop1" filename="gerard_male_searcher_walk_7_CLEAN.fbx" start="60" end="166" blendstart="0.5" moving="true" playback="0.7"/>
+  <Animation action="SearcherActiveWalk1" filename="gerard_male_searcher_walk_9_CLEAN.fbx" start="6" end="195" blendstart="0.3"/>
+  <Animation action="SearcherActiveIdle" actionindex="0" filename="gerard_male_searcher_idle_6_CLEAN.fbx" start="6" end="133" blendstart="1.0"/>
+  <Animation action="SearcherActiveIdle1" actionindex="0" filename="gerard_male_searcher_idle_6_CLEAN.fbx" start="6" end="133" blendstart="1.0"/>
+
+  <Animation action="SearcherBeatWall" actionindex="0" filename="gerard_male_searcher_beat_wall_4_CLEAN.fbx" start="6" end="377" cue="male searcher beat wall 4" cuestart="97" comment="sound synced"/>
+  <Animation action="SearcherBeatWallHead" actionindex="0" filename="gerard_male_searcher_beat_wall_head_3_CLEAN.fbx" start="6" end="395" cue="male searcher beat wall h 3" cuestart="130" comment="sound synced"/>
+  <Animation action="SearcherBeatWallHead180" actionindex="0" filename="gerard_male_searcher_beat_wall_head_5_CLEAN.fbx" start="6" end="256" cue="male searcher beat wall h 5" cuestart="85" comment="sound synced"/>
+  <Animation action="SearcherBeatWallHead90" actionindex="0" filename="gerard_male_searcher_beat_wall_head_6_CLEAN.fbx" start="6" end="332" cue="male searcher beat wall h 6" cuestart="97" comment="sound synced"/>
+
+  <Animation skip="true" action="SearcherHitSelf" actionindex="0" filename="gerard_male_searcher_hitself_2_CLEAN.fbx" start="6" end="543" cue="male searcher hitself 2" cuestart="83" comment="sound synced"/>
+  <Animation skip="true" action="SearcherHitSelf" actionindex="0" filename="gerard_male_searcher_hitself_4_CLEAN.fbx" start="6" end="182" cue="male searcher hitself 4" cuestart="75" comment="sound synced"/>
+
+  <Animation action="SearcherWaitForIndianFile" actionindex="0" filename="gerard_male_searcher_idle_6_CLEAN.fbx" start="6" end="696" blendstart="1.0"/>
+  <Animation action="SearcherIndianFileWalk" actionindex="0" filename="gerard_male_searcher_indian_file_walk_9_CLEAN.fbx" start="83" end="252" playback="0.9" blendstart="0.3"/>
+  <Animation action="SearcherIndianFileWalkLoop" actionindex="0" filename="gerard_male_searcher_indian_file_walk_9_CLEAN.fbx" start="121" end="252" moving="true" playback="0.9" blendstart="0.3"/>
+  <Animation action="SearcherIndianFileSuddenStop" actionindex="0" filename="gerard_male_searcher_indian_file_sudden_stop_4_CLEAN.fbx" start="127" end="204" moving="true" blendstart="2.0"/>
+  <Animation action="SearcherIndianFileIdle" actionindex="0" filename="gerard_male_searcher_indian_file_idle_1_CLEAN.fbx" start="6" end="297" blendstart="2.0"/>
+  <Animation action="SearcherIndianFileIdle" actionindex="0" filename="gerard_male_searcher_indian_file_idle_agitated_2_CLEAN.fbx" start="6" end="388" blendstart="2.0"/>
+
+  <!-- NEW!!!! -->
+  <Animation action="SearcherNewIndianFileWalk" actionindex="0" filename="Gerard_Indian_File_Male_3_CLEAN.fbx" start="155" end="857"  playback="1.0" blendstart="0.033" />
+  <Animation action="SearcherActiveWalkInner" actionindex="0" filename="Gerard_Inner_Male_facing_Out_anti-clockwise_90_facing_Out_1_CLEAN.fbx" start="19" end="642" blendstart="0.6"/>
+  <Animation action="SearcherActiveWalkOuter" actionindex="0" filename="Gerard_Outer_Male_facing_Out_anti-clockwise_90_facing_Out_1_CLEAN.fbx" start="11" end="788" blendstart="0.6"/>
+
+  <!-- In the indian file waiting for the right time to walk to the beat wall location -->
+  <Animation action="SearcherWaitForBeatWallLocation"  actionindex="0" filename="gerard_male_searcher_indian_file_walk_9_CLEAN.fbx" start="121" end="252" moving="true" playback="0.9" blendstart="0.3"/>
+
+  <!-- Walk from Indian file to beat wall location, using the Indian File walk -->
+  <Animation action="SearcherWalkToBeatWallLocation"  actionindex="0" filename="gerard_male_searcher_indian_file_walk_9_CLEAN.fbx" start="121" end="252" moving="true" playback="0.9" blendstart="0.3"/>
+  
+  
+  <!-- Walk in the Indian file till we can see the start of the examine event -->
+  <Animation action="SearcherWaitForClearPathToExaminationStart"  actionindex="0" filename="gerard_male_searcher_indian_file_walk_9_CLEAN.fbx" start="121" end="252" moving="true" playback="0.9" blendstart="0.3"/>
+
+  <!-- Walk to examination start point -->
+  <Animation action="SearcherWalkToExaminationStart"  actionindex="0" filename="gerard_male_searcher_indian_file_walk_9_CLEAN.fbx" start="121" end="252" moving="true" playback="0.9" blendstart="0.3"/>
+
+  <!-- Walk in the Indian file till we can see the start of the violence event -->
+  <Animation action="SearcherWaitForClearPathToViolenceStart"  actionindex="0" filename="gerard_male_searcher_indian_file_walk_9_CLEAN.fbx" start="121" end="252" moving="true" playback="0.9" blendstart="0.3"/>
+
+  <!-- Walk to violence start point -->
+  <Animation action="SearcherWalkToViolenceStart"  actionindex="0" filename="gerard_male_searcher_indian_file_walk_9_CLEAN.fbx" start="121" end="252" moving="true" playback="0.9" blendstart="0.3"/>
+
+  <!-- Walk to sedentary point -->
+  <Animation action="SearcherJoinSedentary"  actionindex="0" filename="gerard_male_searcher_indian_file_walk_9_CLEAN.fbx" start="6" end="252" playback="0.9" blendstart="0.3"/>
+
+  <!-- Walk to sex starting point -->
+  <Animation action="SearcherWalkToSexStart"  actionindex="0" filename="gerard_male_searcher_indian_file_walk_9_CLEAN.fbx" start="121" end="252" moving="true" playback="0.9" blendstart="0.1"/>
+  <Animation action="SearcherWalkToSexStartLoop" actionindex="0" filename="gerard_male_searcher_indian_file_walk_9_CLEAN.fbx" start="121" end="252" moving="true" playback="0.9" blendstart="0.3"/>
+  <Animation action="SearcherWaitForSexToStart" actionindex="0" filename="gerard_male_searcher_idle_6_CLEAN.fbx" start="6" end="696" blendstart="2.0"/>
+
+
+  <!-- Searcher turn and walks -->
+  <Animation action="SearcherTurnLeftWalk45" actionindex="0" filename="gerard_male_searcher_turnleft_walk1_CLEAN.fbx" start="6" end="162" blendstart="0.5"/>
+  <Animation action="SearcherTurnLeftWalk90" actionindex="0" filename="gerard_male_searcher_turnleft_walk2_CLEAN.fbx" start="6" end="158" blendstart="0.5"/>
+  <Animation action="SearcherTurnLeftWalk135" actionindex="0" filename="gerard_male_searcher_turnleft_walk3_CLEAN.fbx" start="6" end="148" blendstart="0.5"/>
+  <Animation action="SearcherTurnLeftWalk180" actionindex="0" filename="gerard_male_searcher_turnleft_walk4_CLEAN.fbx" start="6" end="131" blendstart="0.5"/>
+  <Animation action="SearcherTurnRightWalk45" actionindex="0" filename="gerard_male_searcher_turnright_walk1_CLEAN.fbx" start="6" end="118" blendstart="0.5"/>
+  <Animation action="SearcherTurnRightWalk90" actionindex="0" filename="gerard_male_searcher_turnright_walk2_CLEAN.fbx" start="6" end="113" blendstart="0.5"/>
+  <Animation action="SearcherTurnRightWalk135" actionindex="0" filename="gerard_male_searcher_turnright_walk3_CLEAN.fbx" start="6" end="162" blendstart="0.5"/>
+  <Animation action="SearcherTurnRightWalk180" actionindex="0" filename="gerard_male_searcher_turnright_walk4_CLEAN.fbx" start="6" end="139" blendstart="0.5"/>
+
+  <Animation action="SearcherTurnLeft45" actionindex="0" filename="gerard_male_searcher_turnleft_1_CLEAN.fbx" start="6" end="123" blendstart="0.5" playback="0.7"/>
+  <Animation action="SearcherTurnLeft90" actionindex="0" filename="gerard_male_searcher_turnleft_2_CLEAN.fbx" start="6" end="74" blendstart="0.5" playback="0.7"/>
+  <Animation action="SearcherTurnLeft135" actionindex="0" filename="gerard_male_searcher_turnleft_3_CLEAN.fbx" start="6" end="120" blendstart="0.5" playback="0.7"/>
+  <Animation action="SearcherTurnLeft180" actionindex="0" filename="gerard_male_searcher_turnleft_4_CLEAN.fbx" start="6" end="105" blendstart="0.5" playback="0.7"/>
+
+  <Animation action="SearcherTurnRight45" actionindex="0" filename="gerard_male_searcher_turnright_1_CLEAN.fbx" start="6" end="73" blendstart="0.5" playback="0.7"/>
+  <Animation action="SearcherTurnRight90" actionindex="0" filename="gerard_male_searcher_turnright_2_CLEAN.fbx" start="6" end="106" blendstart="0.5" playback="0.7"/>
+  <Animation action="SearcherTurnRight135" actionindex="0" filename="gerard_male_searcher_turnright_3_CLEAN.fbx" start="6" end="104" blendstart="0.5" playback="0.7"/>
+  <Animation action="SearcherTurnRight180" actionindex="0" filename="gerard_male_searcher_turnright_4_CLEAN.fbx" start="6" end="97"  blendstart="0.5" playback="0.7"/>
+
+  <Animation action="SearcherStepBack" actionindex="0" filename="gerard_male_searcher_stepback1_CLEAN.fbx" start="6" end="92" />
+
+  <Animation action="SearcherWalkOnPath" actionindex="0" filename="gerard_male_searcher_walk_7_CLEAN.fbx" start="6" end="192" blendstart="0.25"/>
+  <Animation action="SearcherWalk1" filename="gerard_male_searcher_walk_7_CLEAN.fbx" start="6" end="192" />
+  <Animation action="SearcherWalkLoop" actionindex="0" filename="gerard_male_searcher_walk_9_CLEAN.fbx" start="76" end="163" moving="true" blendstart="1.0" playback="0.9"/>
+  <Animation action="SearcherWalk" filename="gerard_male_searcher_walk_9_CLEAN.fbx" start="6" end="163" blendstart="1.0" playback="0.9"/>
+
+  <Animation action="SearcherWalkToTarget" actionindex="0" filename="gerard_male_searcher_indian_file_walk_9_CLEAN.fbx" start="6" end="244" blendstart="0.3"/>
+  <Animation action="SearcherWalkToTargetLoop" actionindex="0" filename="gerard_male_searcher_indian_file_walk_9_CLEAN.fbx" start="121" end="252" moving="true" playback="0.9" blendstart="0.3"/>
+
+  <!-- Sedentary -->
+
+  <Animation action="SearcherSedentaryIdle" actionindex="0" filename="gerard_male_searcher_idle_6_CLEAN.fbx" start="6" end="696" blendstart="2.0"/>
+  <Animation action="SearcherSedentaryIdle" actionindex="0" filename="gerard_male_searcher_idle_6_CLEAN.fbx" start="6" end="133" blendstart="2.0"/>
+  <Animation action="SearcherSedentaryIdle" actionindex="0" filename="gerard_male_searcher_idle_3_CLEAN.fbx" start="6" end="678" blendstart="2.0"/>
+  <Animation action="SearcherSedentarySquat" actionindex="0" filename="gerard_male_searcher_squat3_CLEAN.fbx" start="6" end="951" blendstart="2.0"/>
+  <!-- stand to squat transition -->
+  <Animation action="SearcherSedentaryStandToSquat" actionindex="0" filename="gerard_male_searcher_transition_1_CLEAN.fbx" start="6" end="231" blendstart="2.0"/>
+  <!-- squat to stand transition -->
+  <Animation action="SearcherSedentarySquatToStand" actionindex="0" filename="gerard_male_searcher_transition_4_CLEAN.fbx" start="6" end="140" blendstart="2.0"/>
+
+
+
+</Animations>

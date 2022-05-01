@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Scene>
+  <Actor type="Searcher" chartype="FemaleMid" modelnum="01" state="SearcherAudioSettingIdle" position="0.00 0.00 0.00" yrot="0" scale="1.0"/>
+  <Actor type="Searcher" chartype="MaleMid" modelnum="01" state="SearcherAudioSettingIdle" position="0.00 0.00 0.00" yrot="0" scale="1.0"/>
+</Scene>

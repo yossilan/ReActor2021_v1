@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Animations>
+  <!-- Defeated seated animations -->
+  <Animation action="DefeatedSeatedCombined" filename="gerard_male_defeated_seated_combined.fbx" start="6" end="2745" />
+  <Animation action="DefeatedSeatedLoop" filename="gerard_male_defeated_seated_combined.fbx" start="1200" end="1670" />
+  <Animation action="DefeatedSeated1" filename="gerard_male_defeated_seated_1_CLEAN.fbx" start="10" end="311" seated="true" blendstart="7.0"/>
+  <Animation action="DefeatedSeated2" filename="gerard_male_defeated_seated_2_CLEAN.fbx" start="10" end="271" seated="true"/>
+  <Animation action="DefeatedSeated_messy" filename="gerard_male_defeated_seated_3_CLEAN.fbx" start="6" end="161" seated="true"/>
+  <Animation action="DefeatedSeated_messy" filename="gerard_male_defeated_seated_4_CLEAN.fbx" start="6" end="165" seated="true"/>
+
+  <Animation action="DefeatedIdle" filename="gerard_male_defeated_stand_to_sit_2_CLEAN.fbx" start="6" end="100" />
+  <Animation action="DefeatedIdle_" filename="gerard_male_standing_hiding_face_1_CLEAN.fbx" start="6" end="320" />
+  <Animation action="DefeatedIdle_" filename="gerard_male_standing_hiding_face_2_CLEAN.fbx" start="6" end="423" />
+
+  <!-- note this is a sit to stand transition --> 
+  <Animation action="DefeatedSitToStand" filename="gerard_male_defeated_seated_5_CLEAN.fbx" start="6" end="1193" comment="facing left at the end" />
+  <Animation action="DefeatedStandToSit" filename="gerard_male_defeated_stand_to_sit_2_CLEAN.fbx" start="8" end="1183" />
+
+  <!-- Defeated walks-->
+  <Animation action="DefeatedWalkOnPerimeter" filename="gerard_male_defeated_walk1_CLEAN.fbx" start="6" end="798" />
+  <Animation action="DefeatedWalkOnPerimeter" filename="gerard_male_defeated_walk2_CLEAN.fbx" start="6" end="1043" />
+  <Animation action="DefeatedWalk" filename="gerard_male_defeated_walk1_CLEAN.fbx" start="6" end="798" />
+  <Animation action="DefeatedWalk" filename="gerard_male_defeated_walk2_CLEAN.fbx" start="6" end="1043" />
+
+  <!-- Defeated turns-->
+  <Animation action="DefeatedTurnLeft45" filename="gerard_male_turnleft_1_CLEAN.fbx" start="6" end="173" />
+  <Animation action="DefeatedTurnLeft90" filename="gerard_male_turnleft_2_CLEAN.fbx" start="6" end="158" />
+  <Animation action="DefeatedTurnLeft135" filename="gerard_male_turnleft_3_CLEAN.fbx" start="6" end="175" />
+  <Animation action="DefeatedTurnLeft180" filename="gerard_male_turnleft_4_CLEAN.fbx" start="6" end="174" />
+  <Animation action="DefeatedTurnRight45" filename="gerard_male_turnright_1_CLEAN.fbx" start="6" end="143" />
+  <Animation action="DefeatedTurnRight90" filename="gerard_male_turnright_2_CLEAN.fbx" start="6" end="164" />
+  <Animation action="DefeatedTurnRight135" filename="gerard_male_turnright_3_CLEAN.fbx" start="6" end="186" />
+  <Animation action="DefeatedTurnRight180" filename="gerard_male_turnright_4_CLEAN.fbx" start="6" end="174" />
+
+  <!-- Defeated turn and walks -->
+  <Animation action="DefeatedTurnLeftWalk45" filename="gerard_male_turnleft_walk_1_CLEAN.fbx" start="6" end="160" />
+  <Animation action="DefeatedTurnLeftWalk90" filename="gerard_male_turnleft_walk_2_CLEAN.fbx" start="6" end="260" />
+  <Animation action="DefeatedTurnLeftWalk135" filename="gerard_male_turnleft_walk_3_CLEAN.fbx" start="6" end="285" />
+  <Animation action="DefeatedTurnLeftWalk180" filename="gerard_male_turnleft_walk_4_CLEAN.fbx" start="6" end="271" />
+  <Animation action="DefeatedTurnRightWalk45" filename="gerard_male_turnright_walk_1_CLEAN.fbx" start="6" end="188" />
+  <Animation action="DefeatedTurnRightWalk90" filename="gerard_male_turnright_walk_2_CLEAN.fbx" start="6" end="260" />
+  <Animation action="DefeatedTurnRightWalk135" filename="gerard_male_turnright_walk_3_CLEAN.fbx" start="6" end="278" />
+  <Animation action="DefeatedTurnRightWalk180" filename="gerard_male_turnright_walk_4_CLEAN.fbx" start="6" end="255" />
+    
+  <Animation action="SearcherAgitated" filename="gerard_male_searcher_agitated_12_CLEAN.fbx" start="6" end="663" />
+  <Animation action="SearcherAgitated" filename="gerard_male_searcher_agitated_15_CLEAN.fbx" start="6" end="578" />
+  <Animation action="SearcherAgitated" filename="gerard_male_searcher_agitated_19_CLEAN.fbx" start="6" end="625" />
+  
+  <Animation action="SearcherAggressiveWalk" filename="gerard_male_searcher_agressive_walk_10_CLEAN.fbx" start="6" end="168" />  
+  <Animation action="SearcherAggressiveWalk" filename="gerard_male_searcher_agressive_walk_11_CLEAN.fbx" start="6" end="181" />
+  <Animation action="SearcherAggressiveWalk" filename="gerard_male_searcher_agressive_walk_12_CLEAN.fbx" start="6" end="165" />
+  
+  <!-- starts in squat, then stands to walk -->
+  <Animation action="SearcherSquatToAggressiveWalk" filename="gerard_male_searcher_agressive_walk_6_CLEAN.fbx" start="45" end="156" />
+  <Animation action="SearcherStandToAggressiveWalk" filename="gerard_male_searcher_agressive_walk_9_CLEAN.fbx" start="6" end="169" />
+  
+  <Animation action="SearcherAggressiveWalkMovingStart" filename="gerard_male_searcher_agressive_walk_9_CLEAN.fbx" start="87" end="169" moving="true"/>
+
+  <Animation action="SearcherBabyThrough" filename="gerard_male_searcher_baby_through_4_CLEAN.fbx" start="6" end="506" />
+  
+  <Animation action="SearcherBeatWall" filename="gerard_male_searcher_beat_wall_3_CLEAN.fbx" start="6" end="531" />
+  <Animation action="SearcherBeatWall" filename="gerard_male_searcher_beat_wall_4_CLEAN.fbx" start="6" end="377" />
+  
+  <Animation action="SearcherBeatWallHead" filename="gerard_male_searcher_beat_wall_head_3_CLEAN.fbx" start="6" end="395" />
+  <Animation action="SearcherBeatWallHead" filename="gerard_male_searcher_beat_wall_head_5_CLEAN.fbx" start="6" end="256" />
+  <Animation action="SearcherBeatWallHead" filename="gerard_male_searcher_beat_wall_head_6_CLEAN.fbx" start="6" end="332" />
+  
+  <Animation action="SearcherBeingBeaten" filename="gerard_male_searcher_being_beaten_3_CLEAN.fbx" start="6" end="448" />
+  <Animation action="SearcherBeingBeaten" filename="gerard_male_searcher_being_beaten_5_CLEAN.fbx" start="6" end="611" />
+  
+  <Animation action="SearcherElderlyWalk" filename="gerard_male_searcher_elderly_walk_1_CLEAN.fbx" start="6" end="422" />
+  <Animation action="SearcherElderlyWalk" filename="gerard_male_searcher_elderly_walk_5_CLEAN.fbx" start="6" end="364" />
+  <Animation action="SearcherElderlyWalk" filename="gerard_male_searcher_elderly_walk_6_CLEAN.fbx" start="6" end="296" />
+  
+  <!-- don't use this - just freeze animations -->
+  <Animation action="SearcherExtravagantPosture" filename="gerard_male_searcher_extravagantposture_27_CLEAN.fbx" start="0" end="0" /> 
+  
+  <Animation action="SearcherHitSelf1" filename="gerard_male_searcher_hitself_2_CLEAN.fbx" start="6" end="543" />
+  <Animation action="SearcherHitSelf2" filename="gerard_male_searcher_hitself_4_CLEAN.fbx" start="6" end="182" />
+  
+  <Animation action="SearcherIdle" filename="gerard_male_searcher_idle_3_CLEAN.fbx" start="6" end="678" />
+  <Animation action="SearcherIdle" filename="gerard_male_searcher_idle_6_CLEAN.fbx" start="6" end="696" />
+  <Animation action="SearcherIndianFileIdle" filename="gerard_male_searcher_indian_file_idle_1_CLEAN.fbx" start="6" end="297" />
+  <Animation action="SearcherIndianFileAgitated" filename="gerard_male_searcher_indian_file_idle_agitated_2_CLEAN.fbx" start="6" end="388" />
+  <!-- curved walk, ends mid stride -->
+  <Animation action="SearcherIndianFileOldWalk_Curved" filename="gerard_male_searcher_indian_file_old_walk_1_TRIMCLEAN.fbx" start="11" end="380" loop="true" moving="true"/>
+  <!-- straight walk, ends with right foot placed on ground, about to lift left foot-->
+  <Animation action="SearcherIndianFileOldWalk" filename="gerard_male_searcher_indian_file_old_walk_4_CLEAN.fbx" start="6" end="240" playback="1.4"/>
+  <Animation action="SearcherIndianFileOldWalkLoop" filename="gerard_male_searcher_indian_file_old_walk_4_CLEAN.fbx" start="140" end="350" playback="1.4" moving="true"/>
+  <Animation action="SearcherIndianFileSuddenStop" filename="gerard_male_searcher_indian_file_sudden_stop_4_CLEAN.fbx" start="157" end="204" moving="true"/>
+  <!-- curved walk, ends mid stride -->
+  <Animation action="SearcherIndianFileWalk" filename="gerard_male_searcher_indian_file_walk_9_CLEAN.fbx" start="47" end="244" />
+  <Animation action="SearcherIndianFileWalk1" filename="gerard_male_searcher_indian_file_walk_9_CLEAN.fbx" start="47" end="146" blendstart="0.3"/>
+  <Animation action="SearcherIndianFileWalk_Curved" filename="gerard_male_searcher_indian_file_walk3_TRIMCLEAN.fbx" start="6" end="147"/>
+  <Animation action="SearcherIndianFileWalkLoop" filename="gerard_male_searcher_indian_file_walk3_TRIMCLEAN.fbx" start="6" end="147" playback="0.7" moving="true"/> 
+  <!-- straight walk, ends standing -->
+  <Animation action="SearcherSquat" filename="gerard_male_searcher_squat3_CLEAN.fbx" start="6" end="951" blendstart="2.0"/>
+  <Animation action="SearcherSquat1" filename="gerard_male_searcher_squat3_CLEAN.fbx" start="6" end="400" blendstart="1.0"/>
+  <Animation action="SearcherStepBack" filename="gerard_male_searcher_stepback1_CLEAN.fbx" start="6" end="92" />
+  <!-- stand to squat transition -->
+  <Animation action="SearcherStandToSquat" filename="gerard_male_searcher_transition_1_CLEAN.fbx" start="6" end="231" blendstart="4.0"/>
+  <!-- squat to stand transition -->
+  <Animation action="SearcherSquatToStand" filename="gerard_male_searcher_transition_4_CLEAN.fbx" start="6" end="140" blendstart="2.0"/>
+
+  <!-- Searcher turn and walks -->
+  <Animation action="SearcherTurnLeftWalk45" filename="gerard_male_searcher_turnleft_walk1_CLEAN.fbx" start="6" end="162" />
+  <Animation action="SearcherTurnLeftWalk90" filename="gerard_male_searcher_turnleft_walk2_CLEAN.fbx" start="6" end="84"/>
+  <Animation action="SearcherTurnLeftWalk135" filename="gerard_male_searcher_turnleft_walk3_CLEAN.fbx" start="6" end="148" />
+  <Animation action="SearcherTurnLeftWalk180" filename="gerard_male_searcher_turnleft_walk4_CLEAN.fbx" start="6" end="131" />
+  <Animation action="SearcherTurnRightWalk45" filename="gerard_male_searcher_turnright_walk1_CLEAN.fbx" start="6" end="118" />
+  <Animation action="SearcherTurnRightWalk90" filename="gerard_male_searcher_turnright_walk2_CLEAN.fbx" start="6" end="113"/>
+  <Animation action="SearcherTurnRightWalk135" filename="gerard_male_searcher_turnright_walk3_CLEAN.fbx" start="6" end="162" />
+  <Animation action="SearcherTurnRightWalk180" filename="gerard_male_searcher_turnright_walk4_CLEAN.fbx" start="6" end="139" />
+  
+  <!-- ends before hands return to relaxed pose... will fix later -->
+  <Animation action="SearcherViolentOutburst1" filename="gerard_male_searcher_violent_outburst_4_CLEAN.fbx" start="6" end="253" />
+  <Animation action="SearcherViolentOutburst2" filename="gerard_male_searcher_violent_outburst_5_CLEAN.fbx" start="45" end="306" />
+  
+  <Animation action="SearcherWalk" filename="gerard_male_searcher_walk_7_CLEAN.fbx" start="6" end="192" />
+  <Animation action="SearcherWalk" filename="gerard_male_searcher_walk_9_CLEAN.fbx" start="6" end="195" />
+  
+  <Animation action="SearcherWalk1" filename="gerard_male_searcher_walk_7_CLEAN.fbx" start="6" end="124" blendstart="0.3"/>
+  <Animation action="SearcherWalk2" filename="gerard_male_searcher_walk_9_CLEAN.fbx" start="6" end="120" blendstart="0.5"/>
+  <Animation action="SearcherWalkStop" filename="gerard_male_searcher_walk_9_CLEAN.fbx" start="150" end="225" moving="true" />
+  
+  <Animation action="SearcherSteppingBack" filename="gerard_male_steppingback_3_CLEAN.fbx" start="6" end="193" />
+  <Animation action="SearcherSwayAway" filename="gerard_male_sway_1_CLEAN.fbx" start="6" end="543" />
+    
+  <Animation action="SearcherTurnLeft45" filename="gerard_male_searcher_turnleft_1_CLEAN.fbx" start="6" end="123" />
+  <Animation action="SearcherTurnLeft90" filename="gerard_male_searcher_turnleft_2_CLEAN.fbx" start="6" end="74" />
+  <Animation action="SearcherTurnLeft135" filename="gerard_male_searcher_turnleft_3_CLEAN.fbx" start="6" end="120" />
+  <Animation action="SearcherTurnLeft180" filename="gerard_male_searcher_turnleft_4_CLEAN.fbx" start="6" end="105" />
+
+  <Animation action="SearcherTurnRight45" filename="gerard_male_searcher_turnright_1_CLEAN.fbx" start="6" end="56" />
+  <Animation action="SearcherTurnRight90" filename="gerard_male_searcher_turnright_2_CLEAN.fbx" start="6" end="106" />
+  <Animation action="SearcherTurnRight135" filename="gerard_male_searcher_turnright_3_CLEAN.fbx" start="6" end="104"/>
+  <Animation action="SearcherTurnRight180" filename="gerard_male_searcher_turnright_4_CLEAN.fbx" start="6" end="97"  />
+
+</Animations>

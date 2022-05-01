@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Animations>
+  <!--Unfinished - needs finger animation-->
+  <Animation action="JointBumpIdle" actor1="Searcher" actor2="Searcher" target="actor2" offset="0 0 -145" rotation="0" filename="Joint.fbx" start="6" end="200" />
+
+  <!--Searcher starts behind and to the left of the defeated-->
+  <Animation action="JointMaleSearcherExaminesFemaleStandingDefeatedA" actor1="Defeated" actor2="Searcher" target="actor1" offset="-79.9 0.00 -160" rotation="27.4" filename="Joint.fbx" start="0" end="561" />
+  <Animation action="JointMaleSearcherExaminesFemaleStandingDefeatedB" actor1="Defeated" actor2="Searcher" target="actor1" offset="-143.67 0 -121" rotation="59.19" filename="Joint.fbx" start="0" end="561" />
+  <Animation action="JointFemaleSearcherExaminesMaleSittingDefeated" actor1="Searcher" actor2="Defeated" target="actor2" offset="-56.00 0.00 25.33" rotation="107" filename="Joint.fbx" start="108" end="1052" />
+
+  <!--Female searcher starts behind and to the right of male searcher, she gets beaten after bump-->
+  <Animation action="JointSearcherBumpStandingSearcher" actor1="Searcher" actor2="Searcher" target="actor2" offset="-44.99 0 -121.24" rotation="24.35" filename="Joint.fbx" start="0" end="340" />
+  <Animation action="JointMaleSearcherBumpStandingFemaleSearcher" actor1="Searcher" actor2="Searcher" target="actor1" offset="13.4 0.00 180.00" rotation="175.00" filename="Joint.fbx" start="0" end="340" />
+  <Animation action="JointMaleSearcherBumpSquattingFemaleSearcher" actor1="Searcher" actor2="Searcher" target="actor1" offset="-117.36 0.00 -137.2" rotation="40.2" filename="Joint.fbx" start="6" end="350" />
+
+  <!--This animation starts with the 2 characters passing each other on their right, then the male turns and grabs the female from behind-->
+  <Animation action="JointSexFromBehind" actor1="Searcher" actor2="Searcher" target="actor1" offset="-36.68 0 22.768" rotation="-173"  filename="Joint.fbx" start="108" end="688" />
+  <Animation action="JointSexFromFront" actor1="Searcher" actor2="Searcher" target="actor1" offset="-8.46 0 14.9" rotation="167"  filename="Joint.fbx" start="130" end="517" />
+  <Animation action="JointSexGrapple" actor1="Searcher" actor2="Searcher" target="actor1" offset="1.99 0.00 25.25" rotation="-175.81"  filename="Joint.fbx" start="130" end="962" />
+</Animations>
+

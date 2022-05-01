@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Animations>
+  <Animation action="BabyCrawling" filename="Diane_baby_crawling_new_1_CLEAN.fbx" start="6" end="1277" />
+  <Animation action="BabyCrawling" filename="Diane_baby_crawling_new_2_CLEAN.fbx" start="6" end="2043" />
+  <Animation action="BabyCrawling" filename="Diane_baby_crawling_new_3_CLEAN.fbx" start="6" end="2215" />
+  <Animation action="BabyCrawling" filename="Diane_baby_rolling1_CLEAN.fbx" start="6" end="974" />
+</Animations>
+
+  

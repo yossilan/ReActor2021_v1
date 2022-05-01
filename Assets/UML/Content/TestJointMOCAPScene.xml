@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Scene>
+  <!-- JointMaleSearcherBumpSquattingFemaleSearcher -->
+  <Actor type="Searcher" chartype="FemaleMid" modelnum="01" state="JointMaleSearcherBumpSquattingFemaleSearcher" position="0 0 0" yrot="0" scale="1.0" display="true"/>
+  <Actor type="Searcher" chartype="MaleMid" modelnum="01" state="JointMaleSearcherBumpSquattingFemaleSearcher" position="-117.36 0.00 -137.2" yrot="40.2" scale="1.0" display="true"/>
+
+  <!-- JointMaleSearcherExaminesFemaleStandingDefeatedA -->
+  <Actor type="Defeated" chartype="FemaleMid" modelnum="01" state="JointMaleSearcherExaminesFemaleStandingDefeatedA" position="0 0 0" yrot="0" scale="1.0" display="false"/>
+  <Actor type="Searcher" chartype="MaleMid" modelnum="01" state="JointMaleSearcherExaminesFemaleStandingDefeatedA" position="-79.9 0.00 -160" yrot="27.4" scale="1.0" display="false"/>
+
+  <!-- JointMaleSearcherExaminesFemaleStandingDefeatedB -->
+  <Actor type="Defeated" chartype="FemaleMid" modelnum="01" state="JointMaleSearcherExaminesFemaleStandingDefeatedB" position="0 0 0" yrot="0" scale="1.0" display="false"/>
+  <Actor type="Searcher" chartype="MaleMid" modelnum="01" state="JointMaleSearcherExaminesFemaleStandingDefeatedB" position="-143.67 0 -121" yrot="59.19" scale="1.0" display="false"/>
+
+  <!-- JointFemaleSearcherExaminesMaleSittingDefeated -->
+  <Actor type="Defeated" chartype="MaleMid" modelnum="01" state="JointFemaleSearcherExaminesMaleSittingDefeated" position="0 0 0" yrot="0" scale="1.0" display="false"/>
+  <Actor type="Searcher" chartype="FemaleMid" modelnum="01" state="JointFemaleSearcherExaminesMaleSittingDefeated" position="-56.00 0.00 25.33" yrot="107" scale="1.0" display="false"/>
+
+  <!-- JointBumpIdle -->
+  <Actor type="Searcher" chartype="MaleMid" modelnum="01" state="JointBumpIdle" position="0 0 0" yrot="0" scale="1.0" display="false"/>
+  <Actor type="Searcher" chartype="FemaleMid" modelnum="01" state="JointBumpIdle" position="0 0 -145" yrot="0" scale="1.0" display="false"/>
+
+  <!-- JointSearcherBumpStandingSearcher -->
+  <Actor type="Searcher" chartype="MaleMid" modelnum="01" state="JointSearcherBumpStandingSearcher" position="0 0 0" yrot="0" scale="1.0" display="false"/>
+  <Actor type="Searcher" chartype="FemaleMid" modelnum="01" state="JointSearcherBumpStandingSearcher" position="-44.99 0 -121.24" yrot="24.35" scale="1.0" display="false"/>
+
+  <!-- JointSearcherBumpStandingSearcher -->
+  <Actor type="Searcher" chartype="FemaleMid" modelnum="01" state="JointMaleSearcherBumpStandingFemaleSearcher" position="0 0 0" yrot="0" scale="1.0" display="false"/>
+  <Actor type="Searcher" chartype="MaleMid" modelnum="01" state="JointMaleSearcherBumpStandingFemaleSearcher" position="13.4 0.00 180.00" yrot="175.00" scale="1.0" display="false"/>
+
+  <!-- JointSexFromBehind -->
+  <Actor type="Searcher" chartype="FemaleMid" modelnum="01" state="JointSexFromBehind" position="0 0 0" yrot="0" scale="1.0" display="false"/>
+  <Actor type="Searcher" chartype="MaleMid" modelnum="01" state="JointSexFromBehind" position="-36.68 0 22.768" yrot="-173" scale="1.0" display="false"/>
+
+  <!-- JointSexFromFront -->
+  <Actor type="Searcher" chartype="FemaleMid" modelnum="01" state="JointSexFromFront" position="0 0 0" yrot="0" scale="1.0" display="false"/>
+  <Actor type="Searcher" chartype="MaleMid" modelnum="01" state="JointSexFromFront" position="-8.46 0 14.9" yrot="167" scale="1.0" display="false"/>
+
+  <!-- JointSearcherBumpStandingSearcher -->
+  <Actor type="Searcher" chartype="FemaleMid" modelnum="01" state="JointSexGrapple" position="0 0 0" yrot="0" scale="1.0" display="false"/>
+  <Actor type="Searcher" chartype="MaleMid" modelnum="01" state="JointSexGrapple" position="1.99 0.00 25.25" yrot="-175.81" scale="1.0" display="false"/>
+
+</Scene>

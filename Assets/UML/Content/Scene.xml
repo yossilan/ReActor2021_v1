@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Scene>
+  <Actor type="Searcher" chartype="MaleMid" modelnum="01" state="SearcherActiveWalk" position="-41.16 0.00 83.54" yrot="-39.38" scale="0.93" randomstart="true" />
+  <Actor type="Searcher" chartype="MaleMid" modelnum="05" state="SearcherActiveWalk" position="23.42 0.00 -107.48" yrot="-21.21" scale="1.0" randomstart="true" />
+  <Actor type="Searcher" chartype="FemaleMid" modelnum="04" state="SearcherActiveWalk" position="110.21 0.00 -5.57" yrot="0.44" scale="0.93" randomstart="true" />
+  <Actor type="Searcher" chartype="MaleMid" modelnum="02" state="SearcherActiveWalk" position="-79.65 0.00 -19.25" yrot="0.00" scale="0.94" randomstart="true" />
+  <Actor type="Searcher" chartype="MaleMid" modelnum="03" state="SearcherActiveWalk" position="-15.98 0.00 18.20" yrot="-20.76" scale="0.93" randomstart="true" />
+  <Actor type="Searcher" chartype="FemaleMid" modelnum="04" state="SearcherActiveWalk" position="0.00 0.00 80.00" yrot="93.95" scale="0.94" randomstart="true" />
+  <Actor type="Searcher" chartype="MaleMid" modelnum="05" state="SearcherActiveWalk" position="-15.83 0.00 -54.13" yrot="-37.16" scale="1.0" randomstart="true" />
+  <Actor type="Searcher" chartype="MaleYoung" modelnum="01" state="SearcherActiveWalk" position="-92.64 0.00 -83.60" yrot="-115.82" scale="0.88" randomstart="true" />
+  <Actor type="Searcher" chartype="MaleOld" modelnum="01" state="SearcherActiveWalk" position="108.37 0.00 56.78" yrot="150.47" scale="0.9" randomstart="true" />
+  <Actor type="Searcher" chartype="FemaleMid" modelnum="01" state="SearcherActiveWalk" position="44.78 0.00 9.08" yrot="58.05" scale="1.0" randomstart="true"/>
+  <Actor type="Searcher" chartype="FemaleOld" modelnum="01" state="SearcherActiveWalk" position="37.85 0.00 -66.99" yrot="35.31" scale="0.88" randomstart="true"/>
+  <Actor type="Searcher" chartype="FemaleYoung" modelnum="01" state="SearcherActiveWalk" position="-100.00 0.00 50.00" yrot="135.58" scale="0.84" randomstart="true"/>
+  <Actor type="Searcher" chartype="FemaleMid" modelnum="02" state="SearcherActiveWalk" position="50.00 0.00 100.00" yrot="0.00" scale="0.91" randomstart="true"/>
+
+  <Actor type="Searcher" chartype="MaleMid" modelnum="01" state="SearcherJoinIndianFile" position="160.00 0.00 0.00" yrot="180.00" scale="1.0" />
+  <Actor type="Searcher" chartype="FemaleMid" modelnum="02" state="SearcherJoinIndianFile" position="118.52 0.00 91.63" yrot="157.87" scale="1.0" />
+  <Actor type="Searcher" chartype="MaleYoung" modelnum="01" state="SearcherJoinIndianFile" position="23.87 0.00 105.29" yrot="85.49" scale="1.0" />
+  <Actor type="Searcher" chartype="FemaleMid"  modelnum="01" state="SearcherJoinIndianFile" position="-102.60 0.00 74.02" yrot="58.57" scale="1.0" />
+
+  <Actor type="Defeated" actionindex="0" chartype="MaleOld" modelnum="01" state="DefeatedStandToStandPostureB" position="218 0 0" yrot="0" scale="1.0"/>
+  <Actor type="Defeated" chartype="FemaleOld" actionindex="1" modelnum="01"  state="DefeatedStandToStandPostureA" position="-218 0 -30" yrot="90" scale="1.0"/>
+  <Actor type="Defeated" actionindex="0" chartype="FemaleOld" modelnum="02"  state="DefeatedSit" position="50 0 -218" yrot="0" scale="1.0"/>
+  <Actor type="Defeated" chartype="MaleMid" modelnum="02" state="DefeatedMaleSeatedWaitToBeExamined" position="30 0 218" yrot="-90" scale="1.0"/>
+
+  <Actor type="Searcher" chartype="FemaleMid" modelnum="02" state="SearcherSedentaryIdle" position="163.71 0.00 -68.87" yrot="55.40" scale="1.0" randomstart="true" />
+  <Actor type="Searcher" chartype="FemaleMid" actionindex="1" modelnum="03" state="SearcherSedentaryIdle" position="81.17 0.00 -160.40" yrot="-29.02" scale="1.0" randomstart="true" />
+  <Actor type="Searcher" chartype="MaleMid" modelnum="04" state="SearcherSedentaryIdle" position="-108.24 0.00 152.33" yrot="-61.58" scale="1.0" randomstart="true" />
+  <Actor type="Searcher" chartype="MaleMid" modelnum="02" state="SearcherSedentaryIdle" position="-183.73 0.00 38.01" yrot="151.41" scale="1.0" randomstart="true" />
+  <Actor type="Searcher" chartype="MaleMid" modelnum="03" state="SearcherSedentaryIdle" position="-92.41 0.00 -164.18" yrot="120.15" scale="1.0" randomstart="true" />
+
+  <Actor type="NorthWoman" chartype="NorthWoman" modelnum="01" state="NorthWomanIdle" position="-139.84 0.00 -238.05" yrot="63.98" scale="1.0" />
+  <Actor type="Baby" chartype="Baby" modelnum="01" state="BabyCrawling" position="0 0 0" yrot="0" scale="0.9"/>
+
+</Scene>

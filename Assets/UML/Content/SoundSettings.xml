@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SoundSettings>
+  <SoundSetting sound="female beating self 10" volume="1.0" loop="false" stream="false" animation="Dianne_Female_Beating_Self_10_CLEAN.fbx" action="SearcherStandingHitSelf" sex="female" character="searcher" />
+</SoundSettings>
+

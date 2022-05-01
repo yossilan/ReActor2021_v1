@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ChamberplayXNATorchRange>
+  <TorchRange YawLeft="1.0" YawRight="-1.0" PitchTop="1.0" PitchBottom="-1.0"/>
+  <TorchRange YawLeft="1.0" YawRight="-1.0" PitchTop="1.0" PitchBottom="-1.0"/>
+  <TorchRange YawLeft="1.0" YawRight="-1.0" PitchTop="1.0" PitchBottom="-1.0"/>
+  <TorchRange YawLeft="1.0" YawRight="-1.0" PitchTop="1.0" PitchBottom="-1.0"/>
+  <TorchRange YawLeft="1.0" YawRight="-1.0" PitchTop="1.0" PitchBottom="-1.0"/>
+  <TorchRange YawLeft="1.0" YawRight="-1.0" PitchTop="1.0" PitchBottom="-1.0"/>
+</ChamberplayXNATorchRange>

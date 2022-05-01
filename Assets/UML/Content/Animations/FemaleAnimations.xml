@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Animations>
+  <!-- Defeated walks-->
+  <Animation action="DefeatedWalkOnPerimeter" actionindex="0" filename="Fiona_female_defeated_walk_elderly_1_CLEAN.fbx" start="6" end="1231" blendstart="1.0"/>
+  <Animation action="DefeatedWalkOnPerimeter" actionindex="1" filename="Diane_female_defeated_walk_4_CLEAN.fbx" start="6" end="1413" blendstart="1.0"/>
+  <Animation action="DefeatedWalkOnPerimeter" actionindex="1" filename="Diane_female_defeated_walk_1_CLEAN.fbx" start="6" end="869" blendstart="1.0"/>
+  <Animation action="DefeatedWalkOnPerimeter" actionindex="2" filename="Fiona_female_defeated_walk_elderly_1_CLEAN.fbx" start="6" end="1231" />
+
+  <Animation action="DefeatedInitialiseWanderThroughSearcherZone" actionindex="0" filename="Fiona_female_defeated_standing_1_CLEAN.fbx" start="6" end="539" blendstart="2.0" comment="use with fiona walk"/>
+  <Animation action="DefeatedInitialiseWalkOnPerimeter" actionindex="0" filename="Fiona_female_defeated_standing_1_CLEAN.fbx" start="6" end="539" blendstart="2.0" comment="use with fiona walk"/>
+
+  <Animation skip="true" action="DefeatedWanderThroughSearcherZone" actionindex="0" filename="Fiona_female_defeated_walk_elderly_1_CLEAN.fbx" start="6" end="798"  />
+  <Animation action="DefeatedWanderThroughSearcherZone" actionindex="0" filename="Diane_female_defeated_walk_1_CLEAN.fbx" start="6" end="798"  />
+  <Animation action="DefeatedWanderThroughSearcherZone" actionindex="1" filename="Diane_female_defeated_walk_1_CLEAN.fbx" start="6" end="798"  />
+  <Animation skip="true" action="DefeatedWanderThroughSearcherZone" actionindex="2" filename="Fiona_female_defeated_walk_elderly_1_CLEAN.fbx" start="6" end="798"  />
+
+  <!-- Defeated Seated -->
+  <Animation action="DefeatedStandToSit" actionindex="0" filename="Diane2_female_defeated_transition_1_CLEAN.fbx" start="6" end="806" lockbase="true"/>
+  <Animation action="DefeatedSit" actionindex="0" filename="Diane2_female_defeated_transition_1_CLEAN.fbx" start="675" end="1100" blendstart="2.0" lockbase="true"/>
+  <Animation action="DefeatedSitToStand" actionindex="0" filename="Diane2_female_defeated_transition_1_reverse.fbx" start="6" end="800" comment="stand to sit in reverse"/>
+  <Animation action="DefeatedStandUpToWalk" actionindex="0" filename="Diane2_female_defeated_transition_1_reverse.fbx" start="6" end="800" blendstart="3.0" comment="stand to sit in reverse"/>
+
+  <Animation action="DefeatedStandToSit" actionindex="1" filename="Diane2_female_defeated_transition_1_CLEAN.fbx" start="6" end="806" lockbase="true"/>
+  <Animation action="DefeatedSit" actionindex="1" filename="Diane2_female_defeated_transition_1_CLEAN.fbx" start="675" end="1100" blendstart="2.0" lockbase="true"/>
+  <Animation action="DefeatedSitToStand" actionindex="1" filename="Diane2_female_defeated_transition_1_reverse.fbx" start="6" end="800" comment="stand to sit in reverse"/>
+  <Animation action="DefeatedStandUpToWalk" actionindex="1" filename="Diane2_female_defeated_transition_1_reverse.fbx" start="6" end="800" blendstart="3.0" comment="stand to sit in reverse"/>
+
+  <Animation action="DefeatedIdleWaitForExamination" actionindex="0" filename="Fiona_female_defeated_standing_1_CLEAN.fbx" start="6" end="539" blendstart="2.0"/>
+  <Animation action="DefeatedSitIdleWaitForExamination" actionindex="0" filename="Diane2_female_defeated_transition_1_CLEAN.fbx" start="675" end="1100" blendstart="2.0" lockbase="true"/>
+  <Animation action="DefeatedSitToStandWaitForExamination" actionindex="0" filename="Diane2_female_defeated_transition_1_reverse.fbx" start="6" end="800" comment="stand to sit in reverse"/>
+  <Animation action="DefeatedIdleWaitForExamination" actionindex="1" filename="Fiona_female_defeated_standing_1_CLEAN.fbx" start="6" end="539" blendstart="2.0"/>
+  <Animation action="DefeatedSitIdleWaitForExamination" actionindex="1" filename="Diane2_female_defeated_transition_1_CLEAN.fbx" start="675" end="1100" blendstart="2.0" lockbase="true"/>
+  <Animation action="DefeatedSitToStandWaitForExamination" actionindex="1" filename="Diane2_female_defeated_transition_1_reverse.fbx" start="6" end="800" comment="stand to sit in reverse"/>
+
+  <!-- Defeated idles-->
+  <Animation action="DefeatedIdle" actionindex="0" filename="Diane2_female_defeated_hunched_2_CLEAN.fbx" start="6" end="523" />
+  <Animation action="DefeatedIdle" actionindex="0" filename="Fiona_female_defeated_standing_1_CLEAN.fbx" start="6" end="539" blendstart="2.0" comment="use with fiona walk"/>
+  <Animation action="DefeatedIdle" actionindex="1" filename="Diane2_female_defeated_hunched_2_CLEAN.fbx" start="6" end="523" />
+  <Animation action="DefeatedIdle" actionindex="1" filename="Fiona_female_defeated_standing_1_CLEAN.fbx" start="6" end="539" blendstart="2.0" comment="use with fiona walk"/>
+
+  <Animation skip="true" action="DefeatedIdle" actionindex="1" filename="Diane2_female_defeated_standing_looking_up_3_CLEAN.fbx" start="6" end="605" />
+  <Animation skip="true" action="DefeatedIdle" actionindex="0" filename="Fiona_female_defeated_standing_hidingface_3_CLEAN.fbx" start="6" end="754" blendstart="3.0" comment="use with fiona walk"/>
+  <Animation skip="true" action="DefeatedIdle" actionindex="0" filename="Fiona_female_defeated_standing_hunched4_CLEAN.fbx" start="6" end="729" blendstart="3.0" comment="use with fiona walk"/>
+  <Animation skip="true" action="DefeatedIdle" actionindex="0" filename="Fiona_female_defeated_standing_lookingup_1_CLEAN.fbx" start="6" end="660" blendstart="3.0" comment="use with fiona walk"/>
+
+  <Animation action="DefeatedStandToStandPostureA" actionindex="0" filename="Fiona_female_defeated_standing_1_CLEAN.fbx" start="6" end="539" lockbase="true" blendstart="2.0"/>
+  <Animation action="DefeatedStandPostureALoop" actionindex="0" filename="Fiona_female_defeated_standing_1_CLEAN.fbx" start="6" end="539" lockbase="true" blendstart="2.0"/>
+  <Animation action="DefeatedStandPostureAToStand" actionindex="0" filename="Fiona_female_defeated_standing_1_CLEAN.fbx" start="6" end="539" blendstart="1.0"/>
+  <Animation action="DefeatedStandToStandPostureB" actionindex="0" filename="Fiona_female_defeated_standing_lookingup_1_CLEAN.fbx" start="6" end="217" lockbase="true" blendstart="0.5"/>
+  <Animation action="DefeatedStandPostureBLoop" actionindex="0" filename="Fiona_female_defeated_standing_lookingup_1_CLEAN.fbx" start="200" end="442" lockbase="true" blendstart="0.5"/>
+  <Animation action="DefeatedStandPostureBToStand" actionindex="0" filename="Fiona_female_defeated_standing_lookingup_1_CLEAN.fbx" start="427" end="660" />
+
+  <Animation action="DefeatedStandToStandPostureA" actionindex="1" filename="Diane2_female_defeated_standing_looking_up_3_CLEAN.fbx" start="6" end="555" blendstart="2.0" lockbase="true" comment="Starts with head up"/>
+  <Animation action="DefeatedStandPostureALoop" actionindex="1" filename="Diane2_female_defeated_standing_looking_up_3_CLEAN.fbx" start="6" end="555" blendstart="2.0" lockbase="true"/>
+  <Animation action="DefeatedStandPostureAToStand" actionindex="1" filename="Diane2_female_defeated_standing_looking_up_3_CLEAN.fbx" start="555" end="605" />
+  <Animation action="DefeatedStandToStandPostureB" actionindex="1" filename="Diane2_female_defeated_hunched_2_CLEAN.fbx" start="6" end="523" lockbase="true" blendstart="2.0"/>
+  <Animation action="DefeatedStandPostureBLoop" actionindex="1" filename="Diane2_female_defeated_hunched_2_CLEAN.fbx" start="6" end="523" lockbase="true" blendstart="2.0"/>
+  <Animation action="DefeatedStandPostureBToStand" actionindex="1" filename="Diane2_female_defeated_hunched_2_CLEAN.fbx" start="6" end="523" blendstart="2.0"/>
+
+  <Animation action="DefeatedStandToStandPostureA" actionindex="2" filename="Fiona_female_defeated_standing_1_CLEAN.fbx" start="6" end="539" lockbase="true" blendstart="2.0"/>
+  <Animation action="DefeatedStandPostureALoop" actionindex="2" filename="Fiona_female_defeated_standing_1_CLEAN.fbx" start="6" end="539" lockbase="true" blendstart="2.0"/>
+  <Animation action="DefeatedStandPostureAToStand" actionindex="2" filename="Fiona_female_defeated_standing_1_CLEAN.fbx" start="6" end="539" blendstart="1.0"/>
+  <Animation action="DefeatedStandToStandPostureB" actionindex="2" filename="Diane2_female_defeated_hunched_2_CLEAN.fbx" start="6" end="164" lockbase="true" blendstart="0.03"/>
+  <Animation action="DefeatedStandPostureBLoop" actionindex="2" filename="Diane2_female_defeated_hunched_2_CLEAN.fbx" start="164" end="168" lockbase="true" blendstart="0.03"/>
+  <Animation action="DefeatedStandPostureBToStand" actionindex="2" filename="Diane2_female_defeated_hunched_2_CLEAN.fbx" start="168" end="423" />
+
+  <!-- Defeated turns -->
+  <Animation action="DefeatedTurnRight45" actionindex="0" filename="Diane_female_defeated_turnright_1_CLEAN.fbx" start="6" end="140" />
+  <Animation action="DefeatedTurnRight90" actionindex="0" filename="Diane_female_defeated_turnright_2_CLEAN.fbx" start="6" end="130" />
+  <Animation action="DefeatedTurnRight135" actionindex="0"  filename="Diane_female_defeated_turnright_3_CLEAN.fbx" start="6" end="167" />
+  <Animation action="DefeatedTurnRight180" actionindex="0"  filename="Diane_female_defeated_turnright_5_CLEAN.fbx" start="6" end="285" />
+
+  <Animation action="DefeatedTurnLeft45" actionindex="0" filename="Diane_female_defeated_turnleft_2_TRIMCLEAN.fbx" start="6" end="147" />
+  <Animation action="DefeatedTurnLeft90" actionindex="0" filename="Diane_female_defeated_turnleft_3_TRIMCLEAN.fbx" start="6" end="128" />
+  <Animation action="DefeatedTurnLeft135" actionindex="0" filename="Diane_female_defeated_turnleft_4_CLEAN.fbx" start="6" end="158" />
+  <Animation action="DefeatedTurnLeft180" actionindex="0" filename="Diane_female_defeated_turnleft_5_CLEAN.fbx" start="6" end="174" />
+
+  <Animation action="DefeatedTurnRight45" actionindex="1" filename="Diane_female_defeated_turnright_1_CLEAN.fbx" start="6" end="140" />
+  <Animation action="DefeatedTurnRight90" actionindex="1" filename="Diane_female_defeated_turnright_2_CLEAN.fbx" start="6" end="130" />
+  <Animation action="DefeatedTurnRight135" actionindex="1"  filename="Diane_female_defeated_turnright_3_CLEAN.fbx" start="6" end="167" />
+  <Animation action="DefeatedTurnRight180" actionindex="1"  filename="Diane_female_defeated_turnright_5_CLEAN.fbx" start="6" end="285" />
+
+  <Animation action="DefeatedTurnRightWalk45" actionindex="1" filename="Diane_female_defeated_turnright_walk1_CLEAN.fbx" start="6" end="208" />
+  <Animation action="DefeatedTurnRightWalk90" actionindex="1" filename="Diane_female_defeated_turnright_walk2_CLEAN.fbx" start="6" end="236" />
+  <Animation action="DefeatedTurnRightWalk135" actionindex="1"  filename="Diane_female_defeated_turnright_walk3_CLEAN.fbx" start="6" end="249" />
+  <Animation action="DefeatedTurnRightWalk180" actionindex="1"  filename="Diane_female_defeated_turnright_walk4_CLEAN.fbx" start="6" end="307" />
+
+  <Animation action="DefeatedTurnLeft45" actionindex="1" filename="Diane_female_defeated_turnleft_2_TRIMCLEAN.fbx" start="6" end="147" />
+  <Animation action="DefeatedTurnLeft90" actionindex="1" filename="Diane_female_defeated_turnleft_3_TRIMCLEAN.fbx" start="6" end="128" />
+  <Animation action="DefeatedTurnLeft135" actionindex="1" filename="Diane_female_defeated_turnleft_4_CLEAN.fbx" start="6" end="158" />
+  <Animation action="DefeatedTurnLeft180" actionindex="1" filename="Diane_female_defeated_turnleft_5_CLEAN.fbx" start="6" end="174" />
+
+  <Animation action="DefeatedTurnLeftWalk45" actionindex="1" filename="Diane_female_defeated_turnleft_walk_1_CLEAN.fbx" start="6" end="189" />
+  <Animation action="DefeatedTurnLeftWalk90" actionindex="1" filename="Diane_female_defeated_turnleft_walk_3_CLEAN.fbx" start="6" end="252" />
+  <Animation action="DefeatedTurnLeftWalk135" actionindex="1" filename="Diane_female_defeated_turnleft_walk_4_CLEAN.fbx" start="6" end="223" />
+  <Animation action="DefeatedTurnLeftWalk180" actionindex="1" filename="Diane_female_defeated_turnleft_walk_5_CLEAN.fbx" start="6" end="300" />
+
+  <Animation skip="true" action="DefeatedTurnLeft45" actionindex="2" filename="Diane_female_defeated_turnleft_2_TRIMCLEAN.fbx" start="6" end="147" />
+  <Animation skip="true" action="DefeatedTurnLeft90" actionindex="2" filename="Diane_female_defeated_turnleft_3_TRIMCLEAN.fbx" start="6" end="128" />
+  <Animation skip="true" action="DefeatedTurnLeft135" actionindex="2" filename="Diane_female_defeated_turnleft_4_CLEAN.fbx" start="6" end="158" />
+  <Animation skip="true" action="DefeatedTurnLeft180" actionindex="2" filename="Diane_female_defeated_turnleft_5_CLEAN.fbx" start="6" end="174" />
+
+  <Animation skip="true" action="DefeatedTurnRight45" actionindex="2" filename="Diane_female_defeated_turnright_1_CLEAN.fbx" start="6" end="140" />
+  <Animation skip="true" action="DefeatedTurnRight90" actionindex="2" filename="Diane_female_defeated_turnright_2_CLEAN.fbx" start="6" end="130" />
+  <Animation skip="true" action="DefeatedTurnRight135" actionindex="2"  filename="Diane_female_defeated_turnright_3_CLEAN.fbx" start="6" end="167" />
+  <Animation skip="true" action="DefeatedTurnRight180" actionindex="2"  filename="Diane_female_defeated_turnright_5_CLEAN.fbx" start="6" end="285" />
+
+  <!-- New Searcher Behaviours -->
+  <!-- Active zone behaviour -->
+  <Animation action="SearcherOuterStage1"     actionindex="0" filename="Dianne_Outer_Female_facing_Out_anti-clockwise_90_facing_Out_5_CLEAN.fbx" start="12" end="1029" blendstart="0.2"/>
+  <Animation action="SearcherOuterStage2"     actionindex="0" filename="Dianne_Outer_Female_facing_Out_clockwise_60_facing_In_2_CLEAN.fbx" start="12" end="568" />
+  <Animation action="SearcherOuterStage3"     actionindex="0" filename="Dianne_Outer_Female_facing_In_anti-clockwise_90_facing_Out_1_CLEAN.fbx" start="12" end="820" />
+  <Animation action="SearcherOutToIn"         actionindex="0" filename="Dianne_Outer_Female_facing_Out_transition_to_Inner_facing_out_1_CLEAN.fbx" start="12" end="432" />
+  <Animation action="SearcherInnerStage1"     actionindex="0" filename="Dianne_Inner_Female_facing_Out_anti-clockwise_90_facing_Out_1_CLEAN.fbx" start="12" end="546"/>
+  <Animation action="SearcherInnerStage2"     actionindex="0" filename="Dianne_Inner_Female_facing_Out_clockwise_60_facing_In_1_CLEAN.fbx" start="12" end="592" />
+  <Animation action="SearcherInnerStage3"     actionindex="0" filename="Dianne_Inner_Female_facing_In_anti-clockwise_90_facing_Out_1_CLEAN.fbx" start="12" end="592" />
+  <Animation action="SearcherInToOut"         actionindex="0" filename="Dianne_Inner_Female_facing_Out_transition_to_Outer_facing_out_3_CLEAN.fbx" start="12" end="462" />
+
+  <!-- Hitself behaviour -->
+  <Animation action="SearcherWalkingHitSelf" actionindex="0" filename="Dianne_Female_Beating_Self_8_CLEAN.fbx" start="12" end="254" cue="female beating self 8" cuestart="99" comment="uml2 ok"/>
+  <Animation action="SearcherWalkingHitSelf"  actionindex="0" filename="Dianne_Female_Beating_Self_7_CLEAN.fbx" start="12" end="326" cue="female beating self 8(Copy)" cuestart="129" comment="uml2 ok"/>
+  <Animation action="SearcherStandingHitSelf"  actionindex="0" filename="Dianne_Female_Beating_Self_10_CLEAN.fbx" start="12" end="212" cue="female beating self 10" cuestart="65" comment="uml2 ok"/>
+  <Animation skip="true" action="SearcherStandingHitSelf" actionindex="0" filename="Fiona_female_searcher_hitself_3_CLEAN.fbx" start="6" end="365" cue="f searcher hitself 3" cuestart="95" comment="sound synced"/>
+  <Animation skip="true" action="SearcherStandingHitSelf" actionindex="0" filename="Diane2_female_searcher_hit_self_2_CLEAN.fbx" start="6" end="375" cuestart="50" cue="f searcher hitself 2" comment="Jeffrey wants to remove"/>
+
+  <Animation action="SearcherReturnToActiveZone" actionindex="0" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="6" end="300" blendstart="0.33"/>
+  <Animation action="SearcherReturnToActiveZoneLoop" actionindex="0" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="300" moving="true" blendstart="0.33"/>
+  <Animation action="SearcherReturnToActiveZone" actionindex="1" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="6" end="318" playback="0.75" blendstart="0.3"/>
+  <Animation action="SearcherReturnToActiveZoneLoop" actionindex="1" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="318" moving="true" playback="0.75" blendstart="0.2"/>
+
+  <Animation skip="true" action="SearcherIndianFileWalkCircle"  actionindex="0" filename="Dianne_Indian_File_Female_2_CLEAN.fbx" start="23" end="639" blendstart="0.3"/>
+  <Animation skip="true" action="SearcherIndianFileWalkCircle1"  actionindex="0" filename="Dianne_Indian_File_Female_3_CLEAN.fbx" start="12" end="1043" blendstart="1.0"/>
+
+  <!-- Searcher -->
+  <!-- Idles (with shorter versions) -->
+  <Animation action="SearcherIdleLong" actionindex="0" filename="Fiona_female_searcher_idle_3_CLEAN.fbx" start="6" end="892" blendstart="0.5"/>
+  <Animation action="SearcherIdle" actionindex="0" filename="Fiona_female_searcher_idle_3_CLEAN.fbx" start="6" end="386" blendstart="0.5"/>
+  <Animation action="SearcherIdleLong" actionindex="0" filename="Fiona_female_searcher_idle_4_CLEAN.fbx" start="6" end="1011" blendstart="0.5"/>
+  <Animation action="SearcherIdleLong" actionindex="1" filename="Diane2_female_searcher_standing_2_CLEAN.fbx" start="6" end="580" blendstart="0.5"/>
+  <Animation action="SearcherIdle" actionindex="1" filename="Diane2_female_searcher_standing_2_CLEAN.fbx" start="6" end="265" blendstart="0.5"/>
+  <Animation action="SearcherIdleLong" actionindex="1" filename="Diane2_female_searcher_standing_3_CLENA.fbx" start="6" end="542" blendstart="0.5"/>
+  <Animation action="SearcherIdle" actionindex="1" filename="Diane2_female_searcher_standing_3_CLENA.fbx" start="6" end="179" blendstart="0.5"/>
+  <Animation action="SearcherIdleLong" actionindex="2" filename="Diane2_female_searcher_standing_2_CLEAN.fbx" start="6" end="580" blendstart="0.5"/>
+  <Animation action="SearcherIdle" actionindex="2" filename="Diane2_female_searcher_standing_2_CLEAN.fbx" start="6" end="265" blendstart="0.5"/>
+
+  <!-- Short idle sequence to tween to bindpose int the DebugServerAudio mode-->
+  <Animation action="SearcherAudioSettingIdle" actionindex="0" filename="Diane2_female_searcher_standing_2_CLEAN.fbx" start="6" end="30" blendstart="0.2"/>
+  <Animation action="SearcherAudioSettingIdle" actionindex="1" filename="Diane2_female_searcher_standing_2_CLEAN.fbx" start="6" end="30" blendstart="0.2"/>
+  <Animation action="SearcherAudioSettingIdle" actionindex="2" filename="Diane2_female_searcher_standing_2_CLEAN.fbx" start="6" end="30" blendstart="0.2"/>
+
+
+  <!-- Turn and walk -->
+  <Animation action="SearcherTurnLeftWalk45" actionindex="0" filename="Diane2_female_searcher_turnleft_walk_1_CLEAN.fbx" start="6" end="113" blendstart="0.5"/>
+  <Animation action="SearcherTurnLeftWalk90" actionindex="0" filename="Diane2_female_searcher_turnleft_walk_3_CLEAN.fbx" start="20" end="115" blendstart="0.5"/>
+  <Animation action="SearcherTurnLeftWalk135" actionindex="0" filename="Diane2_female_searcher_turnleft_walk_4_CLEAN.fbx" start="30" end="139" blendstart="0.5"/>
+  <Animation action="SearcherTurnLeftWalk180" actionindex="0" filename="Diane2_female_searcher_turnleft_walk_5_CLEAN.fbx" start="6" end="129" blendstart="0.5"/>
+
+  <Animation action="SearcherTurnRightWalk45" actionindex="0" filename="Fiona_female_searcher_turnright_walk_1_CLEAN.fbx" start="51" end="121" blendstart="0.5"/>
+  <Animation action="SearcherTurnRightWalk90" actionindex="0" filename="Fiona_female_searcher_turnright_walk_2_CLEAN.fbx" start="52" end="128" blendstart="0.5"/>
+  <Animation action="SearcherTurnRightWalk135" actionindex="0" filename="Fiona_female_searcher_turnright_walk_3_CLEAN.fbx" start="70" end="145" blendstart="0.5"/>
+  <Animation action="SearcherTurnRightWalk180" actionindex="0" filename="Fiona_female_searcher_turnright_walk_4_CLEAN.fbx" start="63" end="152" blendstart="0.5"/>
+
+  <Animation action="SearcherTurnLeftWalk45" actionindex="1" filename="Diane2_female_searcher_turnleft_walk_1_CLEAN.fbx" start="34" end="113" blendstart="0.5" />
+  <Animation action="SearcherTurnLeftWalk90" actionindex="1" filename="Diane2_female_searcher_turnleft_walk_3_CLEAN.fbx" start="30" end="115" blendstart="0.5"/>
+  <Animation action="SearcherTurnLeftWalk135" actionindex="1" filename="Diane2_female_searcher_turnleft_walk_4_CLEAN.fbx" start="42" end="120" blendstart="0.5"/>
+  <Animation action="SearcherTurnLeftWalk180" actionindex="1" filename="Diane2_female_searcher_turnleft_walk_5_CLEAN.fbx" start="34" end="111" blendstart="0.5"/>
+
+  <Animation action="SearcherTurnRightWalk45" actionindex="1" filename="Diane2_female_searcher_turnright_walk_2_CLEAN.fbx" start="21" end="94" blendstart="0.3"/>
+  <Animation action="SearcherTurnRightWalk90" actionindex="1" filename="Diane2_female_searcher_turnright_walk_3_CLEAN.fbx" start="20" end="111" blendstart="0.3"/>
+  <Animation action="SearcherTurnRightWalk135" actionindex="1" filename="Diane2_female_searcher_turnright_walk_4_CLEAN.fbx" start="30" end="111" blendstart="0.3"/>
+  <Animation action="SearcherTurnRightWalk180" actionindex="1" filename="Diane2_female_searcher_turnright_walk_5_CLEAN.fbx" start="10" end="90" blendstart="0.3"/>
+
+  <Animation action="SearcherTurnLeftWalk45" actionindex="2" filename="Diane2_female_searcher_turnleft_walk_1_CLEAN.fbx" start="6" end="113" blendstart="0.3"/>
+  <Animation action="SearcherTurnLeftWalk90" actionindex="2" filename="Diane2_female_searcher_turnleft_walk_3_CLEAN.fbx" start="20" end="115" blendstart="0.3"/>
+  <Animation action="SearcherTurnLeftWalk135" actionindex="2" filename="Diane2_female_searcher_turnleft_walk_4_CLEAN.fbx" start="30" end="139" blendstart="0.3"/>
+  <Animation action="SearcherTurnLeftWalk180" actionindex="2" filename="Diane2_female_searcher_turnleft_walk_5_CLEAN.fbx" start="6" end="129" blendstart="0.3"/>
+
+  <Animation action="SearcherTurnRightWalk45" actionindex="2" filename="Diane2_female_searcher_turnright_walk_2_CLEAN.fbx" start="6" end="113" blendstart="0.5"/>
+  <Animation action="SearcherTurnRightWalk90" actionindex="2" filename="Diane2_female_searcher_turnright_walk_3_CLEAN.fbx" start="20" end="115" blendstart="0.5"/>
+  <Animation action="SearcherTurnRightWalk135" actionindex="2" filename="Diane2_female_searcher_turnright_walk_4_CLEAN.fbx" start="30" end="139" blendstart="0.5"/>
+  <Animation action="SearcherTurnRightWalk180" actionindex="2" filename="Diane2_female_searcher_turnright_walk_5_CLEAN.fbx" start="6" end="129" blendstart="0.5"/>
+
+
+  <!-- Standing turns -->
+  <Animation action="SearcherTurnLeft45" actionindex="0" filename="Fiona_female_searcher_turnleft_1_CLEAN.fbx" start="6" end="92" playback="0.55" blendstart="0.5"/>
+  <Animation action="SearcherTurnLeft90" actionindex="0" filename="Diane2_female_searcher_turnleft_2_CLEAN.fbx" start="6" end="82" playback="0.55" blendstart="0.5"/>
+  <Animation action="SearcherTurnLeft135" actionindex="0" filename="Fiona_female_searcher_turnleft_4_CLEAN.fbx" start="6" end="82" playback="0.55" blendstart="0.5"/>
+  <Animation action="SearcherTurnLeft180" actionindex="0" filename="Fiona_female_searcher_turnleft_5_CLEAN.fbx" start="6" end="117" playback="0.55" />
+
+  <Animation action="SearcherTurnRight45" actionindex="0" filename="Fiona_female_searcher_turnright_1_CLEAN.fbx" start="53" end="128" playback="0.55" blendstart="0.5"/>
+  <Animation action="SearcherTurnRight90" actionindex="0" filename="Fiona_female_searcher_turnright_2_CLEAN.fbx" start="6" end="95" playback="0.55" blendstart="0.5"/>
+  <Animation action="SearcherTurnRight135" actionindex="0" filename="Fiona_female_searcher_turnright_3_CLEAN.fbx" start="6" end="80" playback="0.55" blendstart="0.5"/>
+  <Animation action="SearcherTurnRight180" actionindex="0" filename="Fiona_female_searcher_turnright_5_CLEAN.fbx" start="6" end="117" playback="0.55" blendstart="0.5"/>
+
+  <Animation action="SearcherTurnLeft45" actionindex="1" filename="Diane2_female_searcher_turnleft_1_CLEAN.fbx" start="6" end="92" blendstart="0.5"/>
+  <Animation action="SearcherTurnLeft90" actionindex="1" filename="Diane2_female_searcher_turnleft_2_CLEAN.fbx" start="6" end="82" blendstart="0.5"/>
+  <Animation action="SearcherTurnLeft135" actionindex="1" filename="Diane2_female_searcher_turnleft_3_CLEAN.fbx" start="6" end="164" blendstart="0.5"/>
+  <Animation action="SearcherTurnLeft180" actionindex="1" filename="Diane2_female_searcher_turnleft_4_CLEAN.fbx" start="6" end="102" blendstart="0.5"/>
+
+  <Animation action="SearcherTurnRight45" actionindex="1" filename="Diane2_female_searcher_turnright_1_CLEAN.fbx" start="6" end="92" blendstart="0.5"/>
+  <Animation action="SearcherTurnRight90" actionindex="1" filename="Diane2_female_searcher_turnright_2_CLEAN.fbx" start="6" end="82" blendstart="0.5"/>
+  <Animation action="SearcherTurnRight135" actionindex="1" filename="Diane2_female_searcher_turnright_3_CLEAN.fbx" start="6" end="134" blendstart="0.5"/>
+  <Animation action="SearcherTurnRight180" actionindex="1" filename="Diane2_female_searcher_turnright_4_CLEAN.fbx" start="6" end="102" blendstart="0.5"/>
+
+  <Animation action="SearcherTurnLeft45" actionindex="2" filename="Diane2_female_searcher_turnleft_1_CLEAN.fbx" start="6" end="92" blendstart="0.5"/>
+  <Animation action="SearcherTurnLeft90" actionindex="2" filename="Diane2_female_searcher_turnleft_2_CLEAN.fbx" start="6" end="82" blendstart="0.5"/>
+  <Animation action="SearcherTurnLeft135" actionindex="2" filename="Diane2_female_searcher_turnleft_3_CLEAN.fbx" start="6" end="164" blendstart="0.5"/>
+  <Animation action="SearcherTurnLeft180" actionindex="2" filename="Diane2_female_searcher_turnleft_4_CLEAN.fbx" start="6" end="102" blendstart="0.5"/>
+
+  <Animation action="SearcherTurnRight45" actionindex="2" filename="Diane2_female_searcher_turnright_1_CLEAN.fbx" start="6" end="92" blendstart="0.5"/>
+  <Animation action="SearcherTurnRight90" actionindex="2" filename="Diane2_female_searcher_turnright_2_CLEAN.fbx" start="6" end="82" blendstart="0.5"/>
+  <Animation action="SearcherTurnRight135" actionindex="2" filename="Diane2_female_searcher_turnright_3_CLEAN.fbx" start="6" end="134" blendstart="0.5"/>
+  <Animation action="SearcherTurnRight180" actionindex="2" filename="Diane2_female_searcher_turnright_4_CLEAN.fbx" start="6" end="102" blendstart="0.5"/>
+
+  <Animation skip="true" action="SearcherStepBack" actionindex="0" filename="Fiona_female_searcher_stepback_1_CLEAN.fbx" start="6" end="103" />
+  <Animation skip="true" action="SearcherStepBack" actionindex="1" filename="Diane2_female_searcher_stepback_1_CLEAN.fbx" start="6" end="96" />
+
+  <Animation skip="true" action="SearcherHitSelf1" actionindex="0" filename="Fiona_female_searcher_hitself_2_CLEAN.fbx" start="6" end="212" />
+  <Animation skip="true" action="SearcherHitSelf" actionindex="0" filename="Fiona_female_searcher_hitself_3_CLEAN.fbx" start="6" end="365" cue="f searcher hitself 3" cuestart="95" comment="sound synced"/>
+  <Animation skip="true" action="SearcherHitSelf1" actionindex="1" filename="Diane2_female_searcher_hit_self_1_CLEAN.fbx" start="6" end="435" />
+  <Animation skip="true" action="SearcherHitSelf" actionindex="1" filename="Diane2_female_searcher_hit_self_2_CLEAN.fbx" start="6" end="375" cuestart="50" cue="f searcher hitself 2" />
+
+  <Animation action="SearcherBeatWall" actionindex="0" filename="Diane2_female_searcher_beat_wall_2_CLEAN.fbx" start="6" end="260" cue="female searcher beat wall 2" cuestart="50" blendstart="0.1" comment="uml2 ok"/>
+  <Animation action="SearcherBeatWall" actionindex="1" filename="Diane2_female_searcher_beat_wall_2_CLEAN.fbx" start="6" end="260" cue="female searcher beat wall 2" cuestart="50" blendstart="0.1" comment="uml2 ok"/>
+  <Animation action="SearcherBeatWall" actionindex="0" filename="Diane2_female_searcher_violent_ourburst_4_CLEAN.fbx" start="6" end="199" cue="f searcher beat wall violent outburst 4" cuestart="6"  comment="uml2 ok"/>
+  <Animation action="SearcherBeatWall" actionindex="1" filename="Diane2_female_searcher_violent_ourburst_4_CLEAN.fbx" start="6" end="199" cue="f searcher beat wall violent outburst 4" cuestart="6"  comment="uml2 ok"/>
+  <Animation action="SearcherBeatWallHead" actionindex="0" filename="Diane2_female_searcher_beat_wall_head_5_CLEAN.fbx" start="6" end="211"  cue="f searcher beat wall h 5" cuestart="44" blendstart="0.3" comment="uml2 ok"/>
+  <Animation action="SearcherBeatWallHead" actionindex="1" filename="Diane2_female_searcher_beat_wall_head_5_CLEAN.fbx" start="6" end="211"  cue="f searcher beat wall h 5" cuestart="44" blendstart="0.3" comment="uml2 ok"/>
+
+  <!-- Sedentary -->
+
+  <Animation action="SearcherSedentaryIdle" actionindex="0" filename="Fiona_female_searcher_idle_3_CLEAN.fbx" start="6" end="421" blendstart="1.0" comment="Jeffrey wants to remove"/>
+  <Animation action="SearcherSedentaryIdle" actionindex="0" filename="Fiona_female_searcher_idle_3_CLEAN.fbx" start="6" end="368" blendstart="1.0" comment="Jeffrey wants to remove"/>
+  <Animation action="SearcherSedentaryIdle" actionindex="0" filename="Fiona_female_searcher_idle_4_CLEAN.fbx" start="6" end="1011" blendstart="1.0"/>
+  <Animation action="SearcherSedentaryIdle" actionindex="0" filename="Diane2_female_searcher_agitated_1_CLEAN.fbx" start="6" end="425" blendstart="1.0"/>
+
+  <Animation action="SearcherSedentaryIdle" actionindex="1" filename="Diane2_female_searcher_standing_3_CLEAN.fbx" start="6" end="542" blendstart="1.0"/>
+  <Animation action="SearcherSedentaryIdle" actionindex="1" filename="Diane2_female_searcher_standing_4_CLEAN.fbx" start="6" end="662" blendstart="1.0"/>
+  <Animation action="SearcherSedentaryIdle" actionindex="1" filename="Diane2_female_searcher_standing_5_CLEAN.fbx" start="6" end="646" blendstart="1.0" comment="Jeffrey wants to remove"/>
+  <Animation action="SearcherSedentaryIdle" actionindex="1" filename="Diane2_female_searcher_agitated_1_CLEAN.fbx" start="6" end="425" blendstart="1.0"/>
+
+  <Animation action="SearcherSedentaryStandToSquat" actionindex="0" filename="Fiona_female_searcher_transition1_CLEAN.fbx" start="6" end="192" blendstart="1.0"/>
+  <Animation action="SearcherSedentarySquatToStand" actionindex="0" filename="Fiona_female_searcher_transition2_CLEAN.fbx" start="6" end="171" />
+  <Animation action="SearcherSedentarySquat" actionindex="0" filename="Fiona_female_searcher_squat_4_CLEAN.fbx" start="103" end="1183" blendstart="2.0" comment="Squat is on one knee only use with fiona squat" />
+
+  <Animation action="SearcherSedentaryStandToSquat" actionindex="1" filename="Diane2_female_searcher_transition_1_CLEAN.fbx" start="6" end="285" blendstart="3.0"/>
+  <Animation action="SearcherSedentarySquatToStand" actionindex="1" filename="Diane2_female_searcher_transition_4_CLEAN.fbx" start="6" end="184" />
+  <Animation action="SearcherSedentarySquat" actionindex="1" filename="Diane2_female_searcher_squat_2_CLEAN.fbx" start="6" end="542" blendstart="3.0"/>
+
+  <Animation action="SearcherSedentaryIdleWaitForViolence" actionindex="0" filename="Diane2_female_searcher_standing_5_CLEAN.fbx" start="6" end="664" blendstart="1.0"/>
+  <Animation action="SearcherSedentarySquatIdleWaitForViolence" actionindex="0" filename="Fiona_female_searcher_squat_4_CLEAN.fbx" start="103" end="1183" blendstart="2.0" comment="Squat is on one knee only use with fiona squat" />
+  <Animation action="SearcherSedentarySquatToStandWaitForViolence" actionindex="0" filename="Fiona_female_searcher_transition2_CLEAN.fbx" start="6" end="171" />
+
+  <Animation action="SearcherSedentaryIdleWaitForViolence" actionindex="1" filename="Diane2_female_searcher_standing_5_CLEAN.fbx" start="6" end="664" blendstart="1.0"/>
+  <Animation action="SearcherSedentarySquatIdleWaitForViolence" actionindex="1" filename="Fiona_female_searcher_squat_4_CLEAN.fbx" start="103" end="1183" blendstart="2.0" comment="Squat is on one knee only use with fiona squat" />
+  <Animation action="SearcherSedentarySquatToStandWaitForViolence" actionindex="1" filename="Diane2_female_searcher_transition_4_CLEAN.fbx" start="6" end="184" />
+
+  <!-- Active Searcher walks-->
+  <Animation action="SearcherActiveWalk" actionindex="0" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="6" end="318" />
+  <Animation action="SearcherActiveWalkLoop" actionindex="0" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="318" moving="true" playback="0.75" blendstart="0.2"/>
+  <Animation action="SearcherActiveWalkLoop" actionindex="0" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="318" moving="true" playback="0.7" blendstart="0.2"/>
+  <Animation action="SearcherActiveWalkLoop" actionindex="0" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="318" moving="true" playback="0.8" blendstart="0.2"/>
+  <Animation action="SearcherActiveWalkLoop" actionindex="0" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="318" moving="true" playback="0.6" blendstart="0.2"/>
+  <Animation action="SearcherActiveWalk" actionindex="1" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="6" end="318" />
+  <Animation action="SearcherActiveWalkLoop" actionindex="1" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="318" moving="true" playback="0.75" blendstart="0.2"/>
+  <Animation action="SearcherActiveWalkLoop" actionindex="1" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="318" moving="true" playback="0.7" blendstart="0.2"/>
+  <Animation action="SearcherActiveWalkLoop" actionindex="1" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="318" moving="true" playback="0.65" blendstart="0.2"/>
+  <Animation action="SearcherActiveWalkLoop" actionindex="1" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="318" moving="true" playback="0.6" blendstart="0.2"/>
+
+  <!-- New active searcher behaviour -->
+  <Animation action="SearcherActiveWalkInner" actionindex="0" filename="Dianne_Inner_Female_facing_Out_anti-clockwise_90_facing_Out_1_CLEAN.fbx" start="5" end="558"/>
+  <Animation action="SearcherActiveWalkOuter" actionindex="0" filename="Dianne_Outer_Female_facing_Out_anti-clockwise_90_facing_Out_5_CLEAN.fbx" start="5" end="988"/>
+
+  <!-- These don't matter -->
+  <Animation action="SearcherActiveWalk" actionindex="2" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="6" end="318" />
+  <Animation action="SearcherActiveWalkLoop" actionindex="2" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="318" moving="true" blendstart="0.2"/>
+
+  <Animation action="SearcherActiveWalk1" actionindex="1" filename="Diane2_female_searcher_walk_5_CLEAN.fbx" start="6" end="338" blendstart="0.3"/>
+  <Animation action="SearcherActiveWalk1" filename="Fiona_female_searcher_walk12_CLEAN.fbx" start="6" end="296" blendstart="0.3"/>
+  <Animation action="SearcherActiveWalk1" filename="Fiona_female_searcher_walk7_CLEAN.fbx" start="6" end="223" blendstart="0.3"/>
+  <Animation action="SearcherActiveWalk1" filename="Fiona_female_searcher_walk9_CLEAN.fbx" start="6" end="251" blendstart="0.3" />
+  <Animation action="SearcherActiveIdle" actionindex="0" filename="Fiona_female_searcher_idle_3_CLEAN.fbx" start="6" end="386" blendstart="0.5"/>
+  <Animation action="SearcherActiveIdle" actionindex="1" filename="Diane2_female_searcher_standing_2_CLEAN.fbx" start="6" end="265" blendstart="0.5"/>
+  <Animation action="SearcherActiveIdle1" actionindex="1" filename="Diane2_female_searcher_standing_3_CLENA.fbx" start="6" end="179" blendstart="0.5"/>
+  <Animation action="SearcherActiveIdle" actionindex="2" filename="Diane2_female_searcher_standing_2_CLEAN.fbx" start="6" end="265" blendstart="0.5" />
+
+  <!-- IndianFile walks-->
+  <Animation action="SearcherWaitForIndianFile" actionindex="0" filename="Fiona_female_searcher_idle_3_CLEAN.fbx" start="6" end="421" blendstart="1.0" comment="Jeffrey wants to remove"/>
+  <Animation action="SearcherWaitForIndianFile" actionindex="1" filename="Fiona_female_searcher_idle_3_CLEAN.fbx" start="6" end="421" blendstart="1.0" comment="Jeffrey wants to remove"/>
+  <Animation action="SearcherIndianFileWalk" actionindex="0" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="75" end="318" />
+  <Animation action="SearcherIndianFileWalkLoop" actionindex="0" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="318" moving="true"/>
+  <Animation action="SearcherIndianFileWalkSuddenStop" actionindex="0" filename="Fiona_female_indian_file_sudden_stop_1_CLEAN.fbx" start="111" end="255" blendstart="3.0" moving="true"/>
+  <Animation action="SearcherIndianFileWalk" actionindex="1" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="75" end="318" />
+  <Animation action="SearcherIndianFileWalkLoop" actionindex="1" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="318" moving="true"/>
+  <Animation action="SearcherIndianFileWalkSuddenStop" actionindex="1" filename="Fiona_female_indian_file_sudden_stop_1_CLEAN.fbx" start="111" end="255" blendstart="3.0" moving="true"/>
+  <Animation action="SearcherIndianFileWalk" actionindex="2" filename="Fiona_female_indian_file_old_walk_1_CLEAN.fbx" start="6" end="328" playback="1.1"/>
+  <Animation action="SearcherIndianFileWalkLoop" actionindex="2" filename="Fiona_female_indian_file_old_walk_1_CLEAN.fbx" start="106" end="335" moving="true" playback="1.1"/>
+  <Animation action="SearcherIndianFileWalkSuddenStop" actionindex="2" filename="Fiona_female_indian_file_sudden_stop_1_CLEAN.fbx" start="111" end="255" blendstart="2.0" moving="true" playback="1.1"/>
+
+  <!-- Walk from Indian file to beat wall location, using the Indian File walk -->
+  <Animation action="SearcherWaitForBeatWallLocation" actionindex="0" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="300" moving="true" blendstart="0.33"/>
+  <Animation action="SearcherWaitForBeatWallLocation" actionindex="1" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="300" moving="true" blendstart="0.33"/>
+  <Animation action="SearcherWaitForBeatWallLocation" actionindex="2" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="300" moving="true" blendstart="0.33"/>
+
+  <Animation action="SearcherWalkToBeatWallLocation" actionindex="0" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="300" moving="true" blendstart="0.33"/>
+  <Animation action="SearcherWalkToBeatWallLocation" actionindex="1" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="300" moving="true" blendstart="0.33"/>
+  <Animation action="SearcherWalkToBeatWallLocation" actionindex="2" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="300" moving="true" blendstart="0.33"/>
+
+  <Animation action="SearcherWalkToTarget" actionindex="0" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="6" end="318" blendstart="0.2"/>
+  <Animation action="SearcherWalkToTargetLoop" actionindex="0" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="318" moving="true" blendstart="0.2"/>
+  <Animation action="SearcherWalkToTarget" actionindex="1" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="6" end="318" blendstart="0.2"/>
+  <Animation action="SearcherWalkToTargetLoop" actionindex="1" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="318" moving="true" blendstart="0.2"/>
+  <Animation action="SearcherWalkToTarget" actionindex="2" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="6" end="318" blendstart="0.2"/>
+  <Animation action="SearcherWalkToTargetLoop" actionindex="2" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="318" moving="true" blendstart="0.2"/>
+
+  <!-- Walk to sedentary point -->
+  <Animation action="SearcherJoinSedentary" actionindex="0" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="6" end="318" blendstart="0.2"/>
+  <Animation action="SearcherJoinSedentary" actionindex="1" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="6" end="318" blendstart="0.2"/>
+
+  <!-- Walk to sex starting point...in fact we dont need this animation for the girls -->
+  <Animation action="SearcherWalkToSexStart" actionindex="0" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="75" end="318" blendstart="0.2"/>
+  <Animation action="SearcherWalkToSexStart" actionindex="1" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="75" end="318" blendstart="0.2"/>
+  <Animation action="SearcherWalkToSexStartLoop" actionindex="0" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="300" moving="true" blendstart="0.33"/>
+  <Animation action="SearcherWalkToSexStartLoop" actionindex="1" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="300" moving="true" blendstart="0.33"/>
+  <Animation action="SearcherWaitForSexToStart" actionindex="0" filename="Fiona_female_searcher_idle_3_CLEAN.fbx" start="6" end="421" blendstart="1.0" comment="Jeffrey wants to remove"/>
+  <Animation action="SearcherWaitForSexToStart" actionindex="1" filename="Diane2_female_searcher_standing_3_CLEAN.fbx" start="6" end="542" blendstart="1.0"/>
+
+
+  <!-- Walk in the Indian file till we can see the start of the examine event -->
+  <Animation action="SearcherWaitForClearPathToExaminationStart" actionindex="0" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="300" moving="true" blendstart="0.33"/>
+  <Animation action="SearcherWaitForClearPathToExaminationStart" actionindex="1" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="300" moving="true" blendstart="0.33"/>
+  <Animation action="SearcherWaitForClearPathToExaminationStart" actionindex="2" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="300" moving="true" blendstart="0.33"/>
+
+  <!-- Walk to examination start point -->
+  <Animation action="SearcherWalkToExaminationStart" actionindex="0" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="300" moving="true" blendstart="0.33"/>
+  <Animation action="SearcherWalkToExaminationStart" actionindex="1" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="300" moving="true" blendstart="0.33"/>
+  <Animation action="SearcherWalkToExaminationStart" actionindex="2" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="300" moving="true" blendstart="0.33"/>
+
+  <!-- Walk in the Indian file till we can see the start of the violence event -->
+  <Animation action="SearcherWaitForClearPathToViolenceStart" actionindex="0" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="300" moving="true" blendstart="0.33"/>
+  <Animation action="SearcherWaitForClearPathToViolenceStart" actionindex="1" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="300" moving="true" blendstart="0.33"/>
+  <Animation action="SearcherWaitForClearPathToViolenceStart" actionindex="2" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="300" moving="true" blendstart="0.33"/>
+
+  <Animation action="SearcherSedentaryWaitForViolence" actionindex="0" filename="Diane2_female_searcher_standing_5_CLEAN.fbx" start="6" end="664" blendstart="1.0"/>
+  <Animation action="SearcherSedentaryWaitForViolence" actionindex="1" filename="Diane2_female_searcher_standing_5_CLEAN.fbx" start="6" end="664" blendstart="1.0"/>
+  <Animation action="SearcherSedentaryWaitForViolence" actionindex="2" filename="Diane2_female_searcher_standing_5_CLEAN.fbx" start="6" end="664" blendstart="1.0"/>
+
+  <!-- Walk to violence start point -->
+  <Animation action="SearcherWalkToViolenceStart" actionindex="0" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="300" moving="true" blendstart="0.33"/>
+  <Animation action="SearcherWalkToViolenceStart" actionindex="1" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="300" moving="true" blendstart="0.33"/>
+  <Animation action="SearcherWalkToViolenceStart" actionindex="2" filename="Fiona_female_indian_file_walk_4_CLEAN.fbx" start="144" end="300" moving="true" blendstart="0.33"/>
+
+
+  <Animation action="SearcherIndianFileIdle" actionindex="2" filename="Fiona_female_indian_file_idle_1_CLEAN.fbx" start="6" end="358" />
+  <Animation action="SearcherIndianFileIdle" actionindex="2" filename="Fiona_female_indian_file_idle_agitated_1_CLEAN.fbx" start="6" end="563" />
+
+  <!-- Joint -->
+  <Animation action="JointBumpIdle" actionindex="0" filename="G-F_2walking_bump_idle_bump_back_2_Female.fbx" start="6" end="200" />
+  <Animation action="JointSexFromBehind" actionindex="0" filename="G-F_sex1_2_female.fbx" start="6" end="680" />
+  <Animation action="JointSexFromFront" actionindex="0" filename="G-F_sex1_4_female.fbx" start="6" end="525" />
+  <Animation action="JointSexGrapple" actionindex="0" filename="G-D_sex1_10_female.fbx" start="6" end="779" blendstart="0.3"/>
+  <Animation action="JointSexGrapple" actionindex="1" filename="G-D_sex1_10_female.fbx" start="6" end="779" blendstart="0.3"/>
+
+  <Animation action="JointMaleSearcherExaminesFemaleStandingDefeatedA" actionindex="0" filename="G-D_searcher_raises_head_of_standing_defeated_5_female.fbx" start="11" end="759" />
+  <Animation action="JointMaleSearcherExaminesFemaleStandingDefeatedA" actionindex="1" filename="G-D_searcher_raises_head_of_standing_defeated_5_female.fbx" start="11" end="759" />
+  <Animation action="JointMaleSearcherExaminesFemaleStandingDefeatedB" actionindex="0" filename="G-D_searcher_raises_head_of_standing_defeated_4_female.fbx" start="6" end="494" />
+  <Animation action="JointMaleSearcherExaminesFemaleStandingDefeatedB" actionindex="1" filename="G-D_searcher_raises_head_of_standing_defeated_4_female.fbx" start="6" end="494" />
+  <Animation action="JointFemaleSearcherExaminesMaleSittingDefeated" actionindex="0" filename="G-D_searcher_raises_head_of_defeated_5_female.fbx" start="6" end="957"/>
+  <Animation action="JointFemaleSearcherExaminesMaleSittingDefeated" actionindex="1" filename="G-D_searcher_raises_head_of_defeated_5_female.fbx" start="6" end="957"/>
+
+  <Animation action="JointSearcherBumpStandingSearcher" actionindex="0" filename="G-D_searcher_bumps_standing_searcher_3_female.fbx" start="6" end="346" />
+  <Animation action="JointSearcherBumpStandingSearcher" actionindex="1" filename="G-D_searcher_bumps_standing_searcher_3_female.fbx" start="6" end="346" />
+  <Animation action="JointMaleSearcherBumpStandingFemaleSearcher" actionindex="0" filename="G-F_searcher_bumps_standing_searcher_2_female.fbx" start="5" end="371" cue="searcher bumps standing 2" cuestart="115"/>
+  <Animation action="JointMaleSearcherBumpStandingFemaleSearcher" actionindex="1" filename="G-F_searcher_bumps_standing_searcher_2_female.fbx" start="5" end="371" cue="searcher bumps standing 2" cuestart="115"/>
+  <Animation action="JointMaleSearcherBumpSquattingFemaleSearcher" actionindex="0" filename="G-F_searcher_bumps_squatting_searcher_2_female.fbx" start="6" end="350" cue="searcher bumps standing 2" cuestart="115"/>
+  <Animation action="JointMaleSearcherBumpSquattingFemaleSearcher" actionindex="1" filename="G-F_searcher_bumps_squatting_searcher_2_female.fbx" start="6" end="350" cue="searcher bumps standing 2" cuestart="115"/>
+
+
+</Animations>

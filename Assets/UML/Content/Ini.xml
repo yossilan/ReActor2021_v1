@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ChamberplayXNAIni>
+  <Tweakable label="AmbientLightIntensity" type="Float" value="0.0" min="0.0" max="0.3" step="0.01" comment=""/>
+  
+  <Tweakable label="DefeatedNoiseAmplitude" type="Float" value="0.0" min="0.0" max="10.0" step="0.1" comment="Amplitude of noise used on the skin of the defeated"/>
+  <Tweakable label="DefeatedNoiseFrequency" type="Float" value="4.0" min="0.05" max="10.0" step="0.05" comment="Frequency of defeated skin oscillation"/>
+  <Tweakable label="SedentaryNoiseAmplitude" type="Float" value="0.0" min="0.0" max="10.0" step="0.1" comment="Amplitude of noise used on the skin of the sedentary"/>
+  <Tweakable label="SedentaryNoiseFrequency" type="Float" value="4.0" min="0.05" max="10.0" step="0.05" comment="Frequency of searcher skin oscillation"/>
+  <Tweakable label="SearcherNoiseAmplitude" type="Float" value="0.0" min="0.0" max="10.0" step="0.1" comment="Amplitude of noise used on the skin of the searcher"/>
+  <Tweakable label="SearcherNoiseFrequency" type="Float" value="4.0" min="0.05" max="10.0" step="0.05" comment="Frequency of searcher skin oscillation"/>
+  <Tweakable label="OuterSkinThickness" type="Float" value="0.5" min="0.0" max="1.0" step="0.01" comment="How much bigger the outer skin is than the inner"/>
+  <Tweakable label="OuterSkinEmissive" type="Float" value="0.01" min="0.0" max="1.0" step="0.001" comment="How emissive the outer skin is"/>
+
+  <Tweakable label="FBNoiseAmplitude" type="Float" value="0.0" min="0.0" max="10.0" step="0.1" comment="Changes the amplitude of noise used on the skin"/>
+  <Tweakable label="LightIntensity" type="Float" value="0.55" min="0.0" max="1.0" step="0.01" comment=""/>
+  <Tweakable label="LightBeamOpacity" type="Float" value="4.0" min="0.0" max="15.0" step="0.01" comment=""/>
+  <Tweakable label="LightConeAngle" type="Float" value="7.0" min="5.0" max="70.0" step="1.0" comment=""/>
+  <Tweakable label="TopSkinSpecular" type="Float" value="0.9" min="0.0" max="1.0" step="0.01" comment=""/>
+  <Tweakable label="UnderSkinSpecular" type="Float" value="1.0" min="0.0" max="1.0" step="0.01" comment=""/>
+  <Tweakable label="NormalMaskIntensity" type="Float" value="0.40" min="0.0" max="1.0" step="0.01" comment=""/>
+  <Tweakable label="AAColourThreshold" type="Float" value="0.35" min="0.0" max="1.0" step="0.001" comment="Colour contrast threshold for AA pixels"/>
+  <Tweakable label="AADepthThreshold" type="Float" value="0.04" min="0.0" max="1.0" step="0.001" comment="Depth threshold for AA pixels"/>
+  <Tweakable label="AAPasses" type="Int" value="1" min="1" max="1" step="1" comment="Number of AA passes"/>
+  <Tweakable label="SearcherSedentaryTransition" type="Float" value="1.0" min="0.0" max="1.0" step="0.05" comment=""/>
+  <Tweakable label="VideoScreenEmissive" type="Float" value="0.25" min="0.0" max="1.0" step="0.01" comment="Brightness of the video screen."/>
+  <Tweakable label="VideoScreenShadows" type="Int" value="0" min="0" max="1" step="1" comment="Casting character shadows onto the video screen."/>
+  <Tweakable label="VideoScreenPositionX" type="Float" value="0.0" min="-100.0" max="100.0" step="1.0" comment=""/>  
+  <Tweakable label="VideoScreenPositionY" type="Float" value="-18.0" min="-100.0" max="100.0" step="1.0" comment=""/>
+  <Tweakable label="ViewportOffsetX"  type="Int" value="0" min="-50" max="50" step="1" comment="Adjusting the X Offset of the viewport."/>
+</ChamberplayXNAIni>

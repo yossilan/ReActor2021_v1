@@ -1,0 +1,3439 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>c2dd3783-6152-417a-a570-095bd61fd081</ProjectGuid>
+    <ProjectTypeGuids>{96E2B04D-8817-42c6-938A-82C39BA4D311};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <XnaFrameworkVersion>v2.0</XnaFrameworkVersion>
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\$(Platform)\$(Configuration)</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <XnaPlatform>Windows</XnaPlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <XnaPlatform>Windows</XnaPlatform>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.FBXImporter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.TextureImporter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.XImporter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\Textures\checker1.tga">
+      <Name>checker1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Textures\extrusion_mask2.tga">
+      <Name>extrusion_mask2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Textures\female01.tga">
+      <Name>female01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Textures\infrared_camera.tga">
+      <Name>infrared_camera</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Shaders\SkinnedModelTexturedLit.fx">
+      <Name>SkinnedModelTexturedLit</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\Textures\h01alph.tga">
+      <Name>h01alph</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Textures\h01diff.tga">
+      <Name>h01diff</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\Textures\eye.tga">
+      <Name>eye</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\flashlight.fbx">
+      <Name>flashlight</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Shaders\ExtrudedSkinnedModel.fx">
+      <Name>ExtrudedSkinnedModel</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\ShadowMap.fx">
+      <Name>ShadowMap</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\SkinnedModelShadow.fx">
+      <Name>SkinnedModelShadow</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\Room\Floor\Textures\room_texture.dds">
+      <Name>room_texture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Textures\female02.dds">
+      <Name>female02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Textures\eye_diffuse.dds">
+      <Name>eye_diffuse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Textures\hair.dds">
+      <Name>hair</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Textures\male01_diffuse.dds">
+      <Name>male01_diffuse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Textures\male_old01.dds">
+      <Name>male_old01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\male01_sketch_mocap.fbx">
+      <Name>male01_sketch_mocap</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\virtual_room_hexagonal.fbx">
+      <Name>virtual_room_hexagonal</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\ClearGBuffer.fx">
+      <Name>ClearGBuffer</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Textures\female02_blurred.dds">
+      <Name>female02_blurred</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\CreatePainterlyParticleVB.fx">
+      <Name>CreatePainterlyParticleVB</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\eye_diffuse.dds">
+      <Name>eye_diffuse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Fonts\DebugText.spritefont">
+      <Name>DebugText</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\female_old01.fbx">
+      <Name>female_old01</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\eye.dds">
+      <Name>eye</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\hair_female_old.dds">
+      <Name>hair_female_old</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\eye.dds">
+      <Name>eye</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\hair_female.dds">
+      <Name>hair_female</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\eye_diffuse.dds">
+      <Name>eye_diffuse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\SkinnedModelSilhouette.fx">
+      <Name>SkinnedModelSilhouette</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\AtmosphericEffect.fx">
+      <Name>AtmosphericEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\_Debug\Cube.fbx">
+      <Name>Cube</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\Floor\floor01.FBX">
+      <Name>floor01</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Textures\room_texture.dds">
+      <Name>room_texture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\Floor\floor02.FBX">
+      <Name>floor02</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\Floor\floor03.FBX">
+      <Name>floor03</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\Floor\floor04.FBX">
+      <Name>floor04</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\Floor\floor05.FBX">
+      <Name>floor05</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\Floor\floor06.FBX">
+      <Name>floor06</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\Ceiling\ceiling01.FBX">
+      <Name>ceiling01</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\Ceiling\ceiling02.FBX">
+      <Name>ceiling02</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\Ceiling\ceiling03.FBX">
+      <Name>ceiling03</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\Ceiling\ceiling04.FBX">
+      <Name>ceiling04</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\Ceiling\ceiling05.FBX">
+      <Name>ceiling05</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\Ceiling\ceiling06.FBX">
+      <Name>ceiling06</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\Walls\wall01.FBX">
+      <Name>wall01</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\Walls\wall02.FBX">
+      <Name>wall02</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\Walls\wall03.FBX">
+      <Name>wall03</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\Walls\wall04.FBX">
+      <Name>wall04</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\Walls\wall05.FBX">
+      <Name>wall05</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\Walls\wall06.FBX">
+      <Name>wall06</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\Ceiling\Textures\room_texture.dds">
+      <Name>room_texture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\Walls\Textures\room_texture.dds">
+      <Name>room_texture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\ClearLBuffer.fx">
+      <Name>ClearLBuffer</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\DeferredRenderLightCone.fx">
+      <Name>DeferredRenderLightCone</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\Screens\screen01.fbx">
+      <Name>screen01</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\Screens\screen02.FBX">
+      <Name>screen02</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\Screens\screen03.fbx">
+      <Name>screen03</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\Screens\screen04.fbx">
+      <Name>screen04</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\Screens\screen05.fbx">
+      <Name>screen05</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\Screens\screen06.FBX">
+      <Name>screen06</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\DeferredRenderLightVolume.fx">
+      <Name>DeferredRenderLightVolume</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\Clear.fx">
+      <Name>Clear</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\DeferredRenderFinalImage.fx">
+      <Name>DeferredRenderFinalImage</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <None Include="Shaders\Include\Lighting.fxh">
+      <Name>Lighting</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </None>
+    <None Include="Shaders\Include\PerlinNoise.fxh">
+      <Name>PerlinNoise</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </None>
+    <None Include="Shaders\Include\Quad.fxh">
+      <Name>Quad</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </None>
+    <None Include="Shaders\Include\SpotLightShadowShared.fxh">
+      <Name>SpotLightShadowShared</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </None>
+    <Compile Include="Shaders\SkinnedModelDeferredShadow.fx">
+      <Name>SkinnedModelDeferredShadow</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\ModelDeferredTexturedLit.fx">
+      <Name>ModelDeferredTexturedLit</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\SkinnedModelDeferredNormalMapped.fx">
+      <Name>SkinnedModelDeferredNormalMapped</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\RenderLightFrustum.fx">
+      <Name>RenderLightFrustum</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\ModelTexturedLit.fx">
+      <Name>ModelTexturedLit</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\ModelShadow.fx">
+      <Name>ModelShadow</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\ModelSilhouette.fx">
+      <Name>ModelSilhouette</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\SkinnedModelBasicRender.fx">
+      <Name>SkinnedModelBasicRender</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Normal Maps\female_normalmap.dds">
+      <Name>female_normalmap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Normal Maps\male_normalmap.dds">
+      <Name>male_normalmap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Normal Maps\TestNormalMap.dds">
+      <Name>TestNormalMap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\SkinnedModelNormalMapped.fx">
+      <Name>SkinnedModelNormalMapped</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Brushes\brush08.dds">
+      <Name>brush08</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Brushes\brush08b.dds">
+      <Name>brush08b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Brushes\brush09.dds">
+      <Name>brush09</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Brushes\brush09b.dds">
+      <Name>brush09b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Brushes\brush10.dds">
+      <Name>brush10</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Brushes\brush10b.dds">
+      <Name>brush10b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Brushes\brush05.dds">
+      <Name>brush05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Brushes\brush06.dds">
+      <Name>brush06</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Brushes\brush07.dds">
+      <Name>brush07</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Brushes\brush01_white_circle_alpha.dds">
+      <Name>brush01_white_circle_alpha</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Brushes\brush02_black_circle_alpha.dds">
+      <Name>brush02_black_circle_alpha</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Brushes\brush03_white_blob_alpha.dds">
+      <Name>brush03_white_blob_alpha</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\Video.fx">
+      <Name>Video</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\RenderPainterlyParticle.fx">
+      <Name>RenderPainterlyParticle</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\SkinnedModelPainterly.fx">
+      <Name>SkinnedModelPainterly</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\PerlinNoise.fx">
+      <Name>PerlinNoise</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\Sobel.fx">
+      <Name>Sobel</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\RenderTexQuad.fx">
+      <Name>RenderTexQuad</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\SkinnedModelSketchImage.fx">
+      <Name>SkinnedModelSketchImage</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\SkinnedModelMRT.fx">
+      <Name>SkinnedModelMRT</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\SkinnedModelExtrusion.fx">
+      <Name>SkinnedModelExtrusion</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\SkinnedModelSketchObject.fx">
+      <Name>SkinnedModelSketchObject</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Hatched\hatch01.dds">
+      <Name>hatch01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_GenerateMipmaps>True</ProcessorParameters_GenerateMipmaps>
+    </Compile>
+    <Compile Include="Textures\Hatched\hatch02.dds">
+      <Name>hatch02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_GenerateMipmaps>True</ProcessorParameters_GenerateMipmaps>
+    </Compile>
+    <Compile Include="Textures\Hatched\hatch03.dds">
+      <Name>hatch03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_GenerateMipmaps>True</ProcessorParameters_GenerateMipmaps>
+    </Compile>
+    <Compile Include="Textures\Hatched\hatch04.dds">
+      <Name>hatch04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_GenerateMipmaps>True</ProcessorParameters_GenerateMipmaps>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\Spotlights\spotlight.png">
+      <Name>spotlight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Spotlights\spotlightv2_1024.png">
+      <Name>spotlightv2_1024</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Spotlights\spotlight_1024.png">
+      <Name>spotlight_1024</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\Brushes\PaintBrush.png">
+      <Name>PaintBrush</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\Spotlights\sqrlight.png">
+      <Name>sqrlight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Animations\MaleAnimationsScratch.xml">
+      <Name>MaleAnimationsScratch</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Animations\NorthWomanAnimations.xml">
+      <Name>NorthWomanAnimations</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Animations\BabyAnimations.xml">
+      <Name>BabyAnimations</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Compile Include="Animations\Male\gerard_male_defeated_seated_1_CLEAN.fbx">
+      <Name>gerard_male_defeated_seated_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_defeated_seated_2_CLEAN.fbx">
+      <Name>gerard_male_defeated_seated_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_defeated_seated_3_CLEAN.fbx">
+      <Name>gerard_male_defeated_seated_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_defeated_seated_4_CLEAN.fbx">
+      <Name>gerard_male_defeated_seated_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_defeated_seated_5_CLEAN.fbx">
+      <Name>gerard_male_defeated_seated_5_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_defeated_stand_to_sit_2_CLEAN.fbx">
+      <Name>gerard_male_defeated_stand_to_sit_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_agitated_15_CLEAN.fbx">
+      <Name>gerard_male_searcher_agitated_15_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_agitated_19_CLEAN.fbx">
+      <Name>gerard_male_searcher_agitated_19_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_agressive_walk_10_CLEAN.fbx">
+      <Name>gerard_male_searcher_agressive_walk_10_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_agressive_walk_11_CLEAN.fbx">
+      <Name>gerard_male_searcher_agressive_walk_11_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_agressive_walk_12_CLEAN.fbx">
+      <Name>gerard_male_searcher_agressive_walk_12_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_agressive_walk_6_CLEAN.fbx">
+      <Name>gerard_male_searcher_agressive_walk_6_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_agressive_walk_9_CLEAN.fbx">
+      <Name>gerard_male_searcher_agressive_walk_9_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_baby_through_4_CLEAN.fbx">
+      <Name>gerard_male_searcher_baby_through_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_beat_wall_3_CLEAN.fbx">
+      <Name>gerard_male_searcher_beat_wall_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_beat_wall_4_CLEAN.fbx">
+      <Name>gerard_male_searcher_beat_wall_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_beat_wall_head_3_CLEAN.fbx">
+      <Name>gerard_male_searcher_beat_wall_head_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_beat_wall_head_5_CLEAN.fbx">
+      <Name>gerard_male_searcher_beat_wall_head_5_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_beat_wall_head_6_CLEAN.fbx">
+      <Name>gerard_male_searcher_beat_wall_head_6_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_elderly_walk_1_CLEAN.fbx">
+      <Name>gerard_male_searcher_elderly_walk_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_elderly_walk_5_CLEAN.fbx">
+      <Name>gerard_male_searcher_elderly_walk_5_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_elderly_walk_6_CLEAN.fbx">
+      <Name>gerard_male_searcher_elderly_walk_6_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_extravagantposture_27_CLEAN.fbx">
+      <Name>gerard_male_searcher_extravagantposture_27_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_hitself_2_CLEAN.fbx">
+      <Name>gerard_male_searcher_hitself_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_hitself_4_CLEAN.fbx">
+      <Name>gerard_male_searcher_hitself_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_idle_3_CLEAN.fbx">
+      <Name>gerard_male_searcher_idle_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_idle_6_CLEAN.fbx">
+      <Name>gerard_male_searcher_idle_6_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_indian_file_idle_1_CLEAN.fbx">
+      <Name>gerard_male_searcher_indian_file_idle_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_indian_file_idle_agitated_2_CLEAN.fbx">
+      <Name>gerard_male_searcher_indian_file_idle_agitated_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_indian_file_old_walk_1_TRIMCLEAN.fbx">
+      <Name>gerard_male_searcher_indian_file_old_walk_1_TRIMCLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_indian_file_old_walk_4_CLEAN.fbx">
+      <Name>gerard_male_searcher_indian_file_old_walk_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_indian_file_sudden_stop_4_CLEAN.fbx">
+      <Name>gerard_male_searcher_indian_file_sudden_stop_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_indian_file_walk3_TRIMCLEAN.fbx">
+      <Name>gerard_male_searcher_indian_file_walk3_TRIMCLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_indian_file_walk_9_CLEAN.fbx">
+      <Name>gerard_male_searcher_indian_file_walk_9_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_squat3_CLEAN.fbx">
+      <Name>gerard_male_searcher_squat3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_stepback1_CLEAN.fbx">
+      <Name>gerard_male_searcher_stepback1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_transition_1_CLEAN.fbx">
+      <Name>gerard_male_searcher_transition_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_transition_4_CLEAN.fbx">
+      <Name>gerard_male_searcher_transition_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_turnleft_1_CLEAN.fbx">
+      <Name>gerard_male_searcher_turnleft_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_turnleft_2_CLEAN.fbx">
+      <Name>gerard_male_searcher_turnleft_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_turnleft_3_CLEAN.fbx">
+      <Name>gerard_male_searcher_turnleft_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_turnleft_4_CLEAN.fbx">
+      <Name>gerard_male_searcher_turnleft_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_turnleft_walk1_CLEAN.fbx">
+      <Name>gerard_male_searcher_turnleft_walk1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_turnleft_walk2_CLEAN.fbx">
+      <Name>gerard_male_searcher_turnleft_walk2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_turnleft_walk3_CLEAN.fbx">
+      <Name>gerard_male_searcher_turnleft_walk3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_turnleft_walk4_CLEAN.fbx">
+      <Name>gerard_male_searcher_turnleft_walk4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_turnright_1_CLEAN.fbx">
+      <Name>gerard_male_searcher_turnright_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_turnright_2_CLEAN.fbx">
+      <Name>gerard_male_searcher_turnright_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_turnright_3_CLEAN.fbx">
+      <Name>gerard_male_searcher_turnright_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_turnright_4_CLEAN.fbx">
+      <Name>gerard_male_searcher_turnright_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_turnright_walk1_CLEAN.fbx">
+      <Name>gerard_male_searcher_turnright_walk1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_turnright_walk2_CLEAN.fbx">
+      <Name>gerard_male_searcher_turnright_walk2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_turnright_walk3_CLEAN.fbx">
+      <Name>gerard_male_searcher_turnright_walk3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_turnright_walk4_CLEAN.fbx">
+      <Name>gerard_male_searcher_turnright_walk4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_walk_7_CLEAN.fbx">
+      <Name>gerard_male_searcher_walk_7_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_walk_9_CLEAN.fbx">
+      <Name>gerard_male_searcher_walk_9_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_standing_hiding_face_1_CLEAN.fbx">
+      <Name>gerard_male_standing_hiding_face_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_standing_hiding_face_2_CLEAN.fbx">
+      <Name>gerard_male_standing_hiding_face_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_steppingback_3_CLEAN.fbx">
+      <Name>gerard_male_steppingback_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_sway_1_CLEAN.fbx">
+      <Name>gerard_male_sway_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_turnleft_1_CLEAN.fbx">
+      <Name>gerard_male_turnleft_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_turnleft_2_CLEAN.fbx">
+      <Name>gerard_male_turnleft_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_turnleft_3_CLEAN.fbx">
+      <Name>gerard_male_turnleft_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_turnleft_4_CLEAN.fbx">
+      <Name>gerard_male_turnleft_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_turnleft_walk_1_CLEAN.fbx">
+      <Name>gerard_male_turnleft_walk_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_turnleft_walk_2_CLEAN.fbx">
+      <Name>gerard_male_turnleft_walk_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_turnleft_walk_3_CLEAN.fbx">
+      <Name>gerard_male_turnleft_walk_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_turnleft_walk_4_CLEAN.fbx">
+      <Name>gerard_male_turnleft_walk_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_turnright_1_CLEAN.fbx">
+      <Name>gerard_male_turnright_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_turnright_2_CLEAN.fbx">
+      <Name>gerard_male_turnright_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_turnright_3_CLEAN.fbx">
+      <Name>gerard_male_turnright_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_turnright_4_CLEAN.fbx">
+      <Name>gerard_male_turnright_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_turnright_walk_1_CLEAN.fbx">
+      <Name>gerard_male_turnright_walk_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_turnright_walk_2_CLEAN.fbx">
+      <Name>gerard_male_turnright_walk_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_turnright_walk_3_CLEAN.fbx">
+      <Name>gerard_male_turnright_walk_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_turnright_walk_4_CLEAN.fbx">
+      <Name>gerard_male_turnright_walk_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_defeated_walk1_CLEAN.fbx">
+      <Name>gerard_male_defeated_walk1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_defeated_walk2_CLEAN.fbx">
+      <Name>gerard_male_defeated_walk2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_agitated_12_CLEAN.fbx">
+      <Name>gerard_male_searcher_agitated_12_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_being_beaten_3_CLEAN.fbx">
+      <Name>gerard_male_searcher_being_beaten_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_being_beaten_5_CLEAN.fbx">
+      <Name>gerard_male_searcher_being_beaten_5_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_violent_outburst_4_CLEAN.fbx">
+      <Name>gerard_male_searcher_violent_outburst_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_searcher_violent_outburst_5_CLEAN.fbx">
+      <Name>gerard_male_searcher_violent_outburst_5_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\male_mid01.fbx">
+      <Name>male_mid01</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\ModelBasicRender.fx">
+      <Name>ModelBasicRender</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animations\Male\Textures\eye_diffuse.dds">
+      <Name>eye_diffuse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\Textures\male01_diffuse.dds">
+      <Name>male01_diffuse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Room\Textures\room_texture.dds">
+      <Name>room_texture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\male_young01.fbx">
+      <Name>male_young01</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\NorthWoman\NorthWoman.fbx">
+      <Name>NorthWoman</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Baby\baby01.fbx">
+      <Name>baby01</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Textures\eye.dds">
+      <Name>eye</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Textures\female01.dds">
+      <Name>female01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_indian_file_idle_1_CLEAN.fbx">
+      <Name>Fiona_female_indian_file_idle_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_indian_file_idle_agitated_1_CLEAN.fbx">
+      <Name>Fiona_female_indian_file_idle_agitated_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_indian_file_old_walk_1_CLEAN.fbx">
+      <Name>Fiona_female_indian_file_old_walk_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_indian_file_old_walk_4_TRIMCLEAN.fbx">
+      <Name>Fiona_female_indian_file_old_walk_4_TRIMCLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_indian_file_sudden_stop_1_CLEAN.fbx">
+      <Name>Fiona_female_indian_file_sudden_stop_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_indian_file_walk_3_TRIMCLEAN.fbx">
+      <Name>Fiona_female_indian_file_walk_3_TRIMCLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_indian_file_walk_4_CLEAN.fbx">
+      <Name>Fiona_female_indian_file_walk_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_agitated_3_CLEAN.fbx">
+      <Name>Fiona_female_searcher_agitated_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_agressive_walk_5_CLEAN.fbx">
+      <Name>Fiona_female_searcher_agressive_walk_5_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_agressive_walk_9_CLEAN.fbx">
+      <Name>Fiona_female_searcher_agressive_walk_9_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_babythrough_1_CLEAN.fbx">
+      <Name>Fiona_female_searcher_babythrough_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_beaten_5_CLEAN.fbx">
+      <Name>Fiona_female_searcher_beaten_5_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_hitself_2_CLEAN.fbx">
+      <Name>Fiona_female_searcher_hitself_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_hitself_3_CLEAN.fbx">
+      <Name>Fiona_female_searcher_hitself_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_idle_3_CLEAN.fbx">
+      <Name>Fiona_female_searcher_idle_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_idle_4_CLEAN.fbx">
+      <Name>Fiona_female_searcher_idle_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_squat_4_CLEAN.fbx">
+      <Name>Fiona_female_searcher_squat_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_stepback_1_CLEAN.fbx">
+      <Name>Fiona_female_searcher_stepback_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_transition1_CLEAN.fbx">
+      <Name>Fiona_female_searcher_transition1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_transition2_CLEAN.fbx">
+      <Name>Fiona_female_searcher_transition2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_turnleft_1_CLEAN.fbx">
+      <Name>Fiona_female_searcher_turnleft_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_turnleft_4_CLEAN.fbx">
+      <Name>Fiona_female_searcher_turnleft_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_turnleft_5_CLEAN.fbx">
+      <Name>Fiona_female_searcher_turnleft_5_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_turnleft_walk_6_CLEAN.fbx">
+      <Name>Fiona_female_searcher_turnleft_walk_6_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_turnright_1_CLEAN.fbx">
+      <Name>Fiona_female_searcher_turnright_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_turnright_2_CLEAN.fbx">
+      <Name>Fiona_female_searcher_turnright_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_turnright_3_CLEAN.fbx">
+      <Name>Fiona_female_searcher_turnright_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_turnright_5_CLEAN.fbx">
+      <Name>Fiona_female_searcher_turnright_5_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_turnright_walk_1_CLEAN.fbx">
+      <Name>Fiona_female_searcher_turnright_walk_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_turnright_walk_2_CLEAN.fbx">
+      <Name>Fiona_female_searcher_turnright_walk_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_turnright_walk_3_CLEAN.fbx">
+      <Name>Fiona_female_searcher_turnright_walk_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_turnright_walk_4_CLEAN.fbx">
+      <Name>Fiona_female_searcher_turnright_walk_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_violentoutburst_4_CLEAN.fbx">
+      <Name>Fiona_female_searcher_violentoutburst_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_walk12_CLEAN.fbx">
+      <Name>Fiona_female_searcher_walk12_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_walk7_CLEAN.fbx">
+      <Name>Fiona_female_searcher_walk7_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_searcher_walk9_CLEAN.fbx">
+      <Name>Fiona_female_searcher_walk9_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\male_mid03.fbx">
+      <Name>male_mid03</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\male_mid04.fbx">
+      <Name>male_mid04</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\male_mid05.fbx">
+      <Name>male_mid05</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\female_young01.fbx">
+      <Name>female_young01</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <None Include="Scene.xml">
+      <Name>Scene</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Compile Include="Shaders\VideoDeferred.fx">
+      <Name>VideoDeferred</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\MaleOld\male_old01.FBX">
+      <Name>male_old01</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animations\Baby\Textures\eye.dds">
+      <Name>eye</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\male_mid02.fbx">
+      <Name>male_mid02</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Bitmaps\1.bmp">
+      <Name>1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animations\Baby\Textures\baby01.dds">
+      <Name>baby01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Baby\Diane_baby_crawling_new_1_CLEAN.fbx">
+      <Name>Diane_baby_crawling_new_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Baby\Diane_baby_crawling_new_2_CLEAN.fbx">
+      <Name>Diane_baby_crawling_new_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Baby\Diane_baby_crawling_new_3_CLEAN.fbx">
+      <Name>Diane_baby_crawling_new_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Baby\Diane_baby_rolling1_CLEAN.fbx">
+      <Name>Diane_baby_rolling1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\NorthWoman\Diane_northwoman_1_CLEAN.fbx">
+      <Name>Diane_northwoman_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\NorthWoman\Textures\eye.dds">
+      <Name>eye</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\NorthWoman\Textures\female_old01.dds">
+      <Name>female_old01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\NorthWoman\Textures\hair_female_old.dds">
+      <Name>hair_female_old</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_defeated_hiding_face_2_CLEAN.fbx">
+      <Name>Diane2_female_defeated_hiding_face_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_defeated_hunched_2_CLEAN.fbx">
+      <Name>Diane2_female_defeated_hunched_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_defeated_seated_2_CLEAN.fbx">
+      <Name>Diane2_female_defeated_seated_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_defeated_seated_3_CLEAN.fbx">
+      <Name>Diane2_female_defeated_seated_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_defeated_seated_4CLEAN.fbx">
+      <Name>Diane2_female_defeated_seated_4CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_defeated_standing_looking_up_3_CLEAN.fbx">
+      <Name>Diane2_female_defeated_standing_looking_up_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_defeated_transition_1_CLEAN.fbx">
+      <Name>Diane2_female_defeated_transition_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_elderlysearcher_walk_1_CLEAN.fbx">
+      <Name>Diane2_female_elderlysearcher_walk_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_agitated_1_CLEAN.fbx">
+      <Name>Diane2_female_searcher_agitated_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_agressive_walk_1_CLEAN.fbx">
+      <Name>Diane2_female_searcher_agressive_walk_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_agressive_walk_4_CLEAN.fbx">
+      <Name>Diane2_female_searcher_agressive_walk_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_beat_wall_2_CLEAN.fbx">
+      <Name>Diane2_female_searcher_beat_wall_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_beat_wall_head_5_CLEAN.fbx">
+      <Name>Diane2_female_searcher_beat_wall_head_5_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_being_beaten_2_CLEAN.fbx">
+      <Name>Diane2_female_searcher_being_beaten_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_hit_self_1_CLEAN.fbx">
+      <Name>Diane2_female_searcher_hit_self_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_hit_self_2_CLEAN.fbx">
+      <Name>Diane2_female_searcher_hit_self_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_indian_file_walk_15_CLEAN.fbx">
+      <Name>Diane2_female_searcher_indian_file_walk_15_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_indian_file_walk_9_TRIMCLEAN.fbx">
+      <Name>Diane2_female_searcher_indian_file_walk_9_TRIMCLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_squat_2_CLEAN.fbx">
+      <Name>Diane2_female_searcher_squat_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_standing_2_CLEAN.fbx">
+      <Name>Diane2_female_searcher_standing_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_standing_3_CLENA.fbx">
+      <Name>Diane2_female_searcher_standing_3_CLENA</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_standing_4_CLEAN.fbx">
+      <Name>Diane2_female_searcher_standing_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_standing_5_CLEAN.fbx">
+      <Name>Diane2_female_searcher_standing_5_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_stepback_1_CLEAN.fbx">
+      <Name>Diane2_female_searcher_stepback_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_transition_1_CLEAN.fbx">
+      <Name>Diane2_female_searcher_transition_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_transition_4_CLEAN.fbx">
+      <Name>Diane2_female_searcher_transition_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_turnleft_1_CLEAN.fbx">
+      <Name>Diane2_female_searcher_turnleft_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_turnleft_2_CLEAN.fbx">
+      <Name>Diane2_female_searcher_turnleft_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_turnleft_3_CLEAN.fbx">
+      <Name>Diane2_female_searcher_turnleft_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_turnleft_4_CLEAN.fbx">
+      <Name>Diane2_female_searcher_turnleft_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_turnleft_walk_1_CLEAN.fbx">
+      <Name>Diane2_female_searcher_turnleft_walk_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_turnleft_walk_3_CLEAN.fbx">
+      <Name>Diane2_female_searcher_turnleft_walk_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_turnleft_walk_4_CLEAN.fbx">
+      <Name>Diane2_female_searcher_turnleft_walk_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_turnleft_walk_5_CLEAN.fbx">
+      <Name>Diane2_female_searcher_turnleft_walk_5_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_turnright_1_CLEAN.fbx">
+      <Name>Diane2_female_searcher_turnright_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_turnright_2_CLEAN.fbx">
+      <Name>Diane2_female_searcher_turnright_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_turnright_3_CLEAN.fbx">
+      <Name>Diane2_female_searcher_turnright_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_turnright_4_CLEAN.fbx">
+      <Name>Diane2_female_searcher_turnright_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_turnright_walk_2_CLEAN.fbx">
+      <Name>Diane2_female_searcher_turnright_walk_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_turnright_walk_3_CLEAN.fbx">
+      <Name>Diane2_female_searcher_turnright_walk_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_turnright_walk_4_CLEAN.fbx">
+      <Name>Diane2_female_searcher_turnright_walk_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_turnright_walk_5_CLEAN.fbx">
+      <Name>Diane2_female_searcher_turnright_walk_5_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_violent_ourburst_4_CLEAN.fbx">
+      <Name>Diane2_female_searcher_violent_ourburst_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_violent_ourburst_6_CLEAN.fbx">
+      <Name>Diane2_female_searcher_violent_ourburst_6_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_searcher_walk_5_CLEAN.fbx">
+      <Name>Diane2_female_searcher_walk_5_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane_female_defeated_turnleft_2_TRIMCLEAN.fbx">
+      <Name>Diane_female_defeated_turnleft_2_TRIMCLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane_female_defeated_turnleft_3_TRIMCLEAN.fbx">
+      <Name>Diane_female_defeated_turnleft_3_TRIMCLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane_female_defeated_turnleft_4_CLEAN.fbx">
+      <Name>Diane_female_defeated_turnleft_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane_female_defeated_turnleft_5_CLEAN.fbx">
+      <Name>Diane_female_defeated_turnleft_5_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane_female_defeated_turnleft_walk_3_CLEAN.fbx">
+      <Name>Diane_female_defeated_turnleft_walk_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane_female_defeated_turnleft_walk_4_CLEAN.fbx">
+      <Name>Diane_female_defeated_turnleft_walk_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane_female_defeated_turnleft_walk_5_CLEAN.fbx">
+      <Name>Diane_female_defeated_turnleft_walk_5_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane_female_defeated_turnright_1_CLEAN.fbx">
+      <Name>Diane_female_defeated_turnright_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane_female_defeated_turnright_2_CLEAN.fbx">
+      <Name>Diane_female_defeated_turnright_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane_female_defeated_turnright_3_CLEAN.fbx">
+      <Name>Diane_female_defeated_turnright_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane_female_defeated_turnright_5_CLEAN.fbx">
+      <Name>Diane_female_defeated_turnright_5_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane_female_defeated_turnright_walk1_CLEAN.fbx">
+      <Name>Diane_female_defeated_turnright_walk1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane_female_defeated_turnright_walk2_CLEAN.fbx">
+      <Name>Diane_female_defeated_turnright_walk2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane_female_defeated_turnright_walk3_CLEAN.fbx">
+      <Name>Diane_female_defeated_turnright_walk3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane_female_defeated_turnright_walk4_CLEAN.fbx">
+      <Name>Diane_female_defeated_turnright_walk4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane_female_defeated_walk_1_CLEAN.fbx">
+      <Name>Diane_female_defeated_walk_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane_female_defeated_walk_4_CLEAN.fbx">
+      <Name>Diane_female_defeated_walk_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_defeated_standing_1_CLEAN.fbx">
+      <Name>Fiona_female_defeated_standing_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_defeated_standing_hidingface_3_CLEAN.fbx">
+      <Name>Fiona_female_defeated_standing_hidingface_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_defeated_standing_hunched4_CLEAN.fbx">
+      <Name>Fiona_female_defeated_standing_hunched4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_defeated_standing_lookingup_1_CLEAN.fbx">
+      <Name>Fiona_female_defeated_standing_lookingup_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_defeated_steppingback_1_CLEAN.fbx">
+      <Name>Fiona_female_defeated_steppingback_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Fiona_female_defeated_walk_elderly_1_CLEAN.fbx">
+      <Name>Fiona_female_defeated_walk_elderly_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <None Include="Animations\FemaleAnimationsScratch.xml">
+      <Name>FemaleAnimationsScratch</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Compile Include="Images\calibration_screen1.tga">
+      <Name>calibration_screen1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Images\calibration_screen2.tga">
+      <Name>calibration_screen2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Images\calibration_screen_colors1.tga">
+      <Name>calibration_screen_colors1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Images\calibration_screen_colors2.tga">
+      <Name>calibration_screen_colors2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\male_old02.FBX">
+      <Name>male_old02</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\male_old03.FBX">
+      <Name>male_old03</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\male_old04.FBX">
+      <Name>male_old04</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\male_old05.FBX">
+      <Name>male_old05</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\male_young02.fbx">
+      <Name>male_young02</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\male_young03.fbx">
+      <Name>male_young03</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <None Include="TestScene.xml">
+      <Name>TestScene</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Compile Include="Textures\video_mask2.dds">
+      <Name>video_mask2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Normal Maps\male_normalmap2.dds">
+      <Name>male_normalmap2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Normal Maps\male_normalmap3.dds">
+      <Name>male_normalmap3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SkinnedModelPipeline\SkinnedModelPipeline.csproj">
+      <Project>{2684ECCE-AB73-4B1F-9F37-21CD2674EB96}</Project>
+      <Name>SkinnedModelPipeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SkinnedNormalMappedModelPipeline\SkinnedNormalMappedModelPipeline.csproj">
+      <Project>{407C5055-92F1-4271-8016-A8973FF17899}</Project>
+      <Name>SkinnedNormalMappedModelPipeline</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ini.xml">
+      <Name>Ini</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Compile Include="Animations\Female\Diane_female_defeated_turnleft_walk_1_CLEAN.fbx">
+      <Name>Diane_female_defeated_turnleft_walk_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Normal Maps\FemaleMaskBlue01.dds">
+      <Name>FemaleMaskBlue01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Normal Maps\FemaleMaskBlue03.dds">
+      <Name>FemaleMaskBlue03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Normal Maps\FemaleMaskGreen01.dds">
+      <Name>FemaleMaskGreen01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Normal Maps\FemaleMaskGreen02.dds">
+      <Name>FemaleMaskGreen02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Normal Maps\FemaleMaskGreen03.dds">
+      <Name>FemaleMaskGreen03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Normal Maps\FemaleMaskRed01.dds">
+      <Name>FemaleMaskRed01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Normal Maps\FemaleMaskRed02.dds">
+      <Name>FemaleMaskRed02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Normal Maps\FemaleMaskRed03.dds">
+      <Name>FemaleMaskRed03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Normal Maps\MaleMaskBlue01.dds">
+      <Name>MaleMaskBlue01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Normal Maps\MaleMaskBlue02.dds">
+      <Name>MaleMaskBlue02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Normal Maps\MaleMaskBlue03.dds">
+      <Name>MaleMaskBlue03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Normal Maps\MaleMaskGreen01.dds">
+      <Name>MaleMaskGreen01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Normal Maps\MaleMaskGreen02.dds">
+      <Name>MaleMaskGreen02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Normal Maps\MaleMaskGreen03.dds">
+      <Name>MaleMaskGreen03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Normal Maps\MaleMaskRed01.dds">
+      <Name>MaleMaskRed01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Normal Maps\MaleMaskRed02.dds">
+      <Name>MaleMaskRed02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Normal Maps\MaleMaskRed03.dds">
+      <Name>MaleMaskRed03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Normal Maps\male_normalmap_mask01.dds">
+      <Name>male_normalmap_mask01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Normal Maps\male_normalmap_mask02.dds">
+      <Name>male_normalmap_mask02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Normal Maps\male_normalmap_mask03.dds">
+      <Name>male_normalmap_mask03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FemaleOldNormalmap01.dds">
+      <Name>FemaleOldNormalmap01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FemaleOldNormalmap02.dds">
+      <Name>FemaleOldNormalmap02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FemaleOldNormalmap03.dds">
+      <Name>FemaleOldNormalmap03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FemaleOldSearcher01.dds">
+      <Name>FemaleOldSearcher01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FemaleMidNormalmap01.dds">
+      <Name>FemaleMidNormalmap01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FemaleMidNormalmap02.dds">
+      <Name>FemaleMidNormalmap02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FemaleMidNormalmap03.dds">
+      <Name>FemaleMidNormalmap03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FemaleMidSearcher01.dds">
+      <Name>FemaleMidSearcher01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FemaleMidSearcher02.dds">
+      <Name>FemaleMidSearcher02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FemaleMidSearcher03.dds">
+      <Name>FemaleMidSearcher03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FemaleMidSearcher04.dds">
+      <Name>FemaleMidSearcher04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\Textures\eye.dds">
+      <Name>eye</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\Textures\FemaleYoungNormalmap01.dds">
+      <Name>FemaleYoungNormalmap01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\Textures\FemaleYoungNormalmap02.dds">
+      <Name>FemaleYoungNormalmap02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\Textures\FemaleYoungNormalmap03.dds">
+      <Name>FemaleYoungNormalmap03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\Textures\FemaleYoungSearcher01.dds">
+      <Name>FemaleYoungSearcher01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Baby\Textures\baby01.dds">
+      <Name>baby01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Baby\Textures\eye.dds">
+      <Name>eye</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\NorthWoman\Textures\eye.dds">
+      <Name>eye</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\NorthWoman\Textures\female_old01.dds">
+      <Name>female_old01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\NorthWoman\Textures\hair_female_old.dds">
+      <Name>hair_female_old</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\MaleMidNormalmap01.dds">
+      <Name>MaleMidNormalmap01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\MaleMidNormalmap02.dds">
+      <Name>MaleMidNormalmap02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\MaleMidNormalmap03.dds">
+      <Name>MaleMidNormalmap03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\MaleMidSearcher01.dds">
+      <Name>MaleMidSearcher01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\MaleMidSearcher02.dds">
+      <Name>MaleMidSearcher02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\MaleMidSearcher03.dds">
+      <Name>MaleMidSearcher03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\MaleMidSearcher04.dds">
+      <Name>MaleMidSearcher04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\MaleMidSearcher05.dds">
+      <Name>MaleMidSearcher05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\MaleMidSedentary01.dds">
+      <Name>MaleMidSedentary01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\MaleMidSedentary02.dds">
+      <Name>MaleMidSedentary02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\MaleMidSedentary03.dds">
+      <Name>MaleMidSedentary03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\MaleMidSedentary04.dds">
+      <Name>MaleMidSedentary04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\MaleMidSedentary05.dds">
+      <Name>MaleMidSedentary05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\MaleMidVanquished01.dds">
+      <Name>MaleMidVanquished01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\MaleMidVanquished02.dds">
+      <Name>MaleMidVanquished02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\MaleMidVanquished03.dds">
+      <Name>MaleMidVanquished03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\MaleMidVanquished04.dds">
+      <Name>MaleMidVanquished04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\MaleMidVanquished05.dds">
+      <Name>MaleMidVanquished05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\MaleOldNormalmap01.dds">
+      <Name>MaleOldNormalmap01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\MaleOldNormalmap02.dds">
+      <Name>MaleOldNormalmap02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\MaleOldNormalmap03.dds">
+      <Name>MaleOldNormalmap03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\MaleOldSearcher01.dds">
+      <Name>MaleOldSearcher01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\MaleOldSearcher02.dds">
+      <Name>MaleOldSearcher02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\MaleOldSearcher03.dds">
+      <Name>MaleOldSearcher03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\MaleOldSearcher04.dds">
+      <Name>MaleOldSearcher04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\MaleOldSearcher05.dds">
+      <Name>MaleOldSearcher05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\MaleOldSedentary01.dds">
+      <Name>MaleOldSedentary01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\MaleOldSedentary02.dds">
+      <Name>MaleOldSedentary02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\MaleOldSedentary03.dds">
+      <Name>MaleOldSedentary03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\MaleOldSedentary04.dds">
+      <Name>MaleOldSedentary04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\MaleOldSedentary05.dds">
+      <Name>MaleOldSedentary05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\MaleOldVanquished01.dds">
+      <Name>MaleOldVanquished01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\MaleOldVanquished02.dds">
+      <Name>MaleOldVanquished02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\MaleOldVanquished03.dds">
+      <Name>MaleOldVanquished03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\MaleOldVanquished04.dds">
+      <Name>MaleOldVanquished04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\MaleOldVanquished05.dds">
+      <Name>MaleOldVanquished05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\Textures\eye_diffuse.dds">
+      <Name>eye_diffuse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\Textures\MaleYoungNormalmap01.dds">
+      <Name>MaleYoungNormalmap01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\Textures\MaleYoungNormalmap02.dds">
+      <Name>MaleYoungNormalmap02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\Textures\MaleYoungNormalmap03.dds">
+      <Name>MaleYoungNormalmap03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\Textures\MaleYoungSearcher01.dds">
+      <Name>MaleYoungSearcher01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\Textures\MaleYoungSearcher02.dds">
+      <Name>MaleYoungSearcher02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\Textures\MaleYoungSearcher03.dds">
+      <Name>MaleYoungSearcher03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\Textures\MaleYoungSedentary01.dds">
+      <Name>MaleYoungSedentary01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\Textures\MaleYoungSedentary02.dds">
+      <Name>MaleYoungSedentary02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\Textures\MaleYoungSedentary03.dds">
+      <Name>MaleYoungSedentary03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\Textures\MaleYoungVanquished01.dds">
+      <Name>MaleYoungVanquished01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\Textures\MaleYoungVanquished02.dds">
+      <Name>MaleYoungVanquished02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\Textures\MaleYoungVanquished03.dds">
+      <Name>MaleYoungVanquished03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Animations\MaleAnimations.xml">
+      <Name>MaleAnimations</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Animations\FemaleAnimations.xml">
+      <Name>FemaleAnimations</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animations\Female\G-D_searcher_bumps_standing_searcher_3_female.fbx">
+      <Name>G-D_searcher_bumps_standing_searcher_3_female</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\G-F_2walking_bump_idle_bump_back_2_female.fbx">
+      <Name>G-F_2walking_bump_idle_bump_back_2_female</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\G-F_sex1_2_female.fbx">
+      <Name>G-F_sex1_2_female</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\G-D_searcher_raises_head_of_standing_defeated_4_female.fbx">
+      <Name>G-D_searcher_raises_head_of_standing_defeated_4_female</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\G-F_2walking_bump_front_1_female.fbx">
+      <Name>G-F_2walking_bump_front_1_female</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\G-F_2walking_bump_idle_bump_front_2_female.fbx">
+      <Name>G-F_2walking_bump_idle_bump_front_2_female</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\G-F_sex1_4_female.fbx">
+      <Name>G-F_sex1_4_female</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\G-D_sex1_10_female.fbx">
+      <Name>G-D_sex1_10_female</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\G-D_searcher_raises_head_of_defeated_5_female.fbx">
+      <Name>G-D_searcher_raises_head_of_defeated_5_female</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\G-F_searcher_bumps_standing_searcher_2_female.fbx">
+      <Name>G-F_searcher_bumps_standing_searcher_2_female</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\G-D_searcher_raises_head_of_standing_defeated_5_female.fbx">
+      <Name>G-D_searcher_raises_head_of_standing_defeated_5_female</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Diane2_female_defeated_transition_1_reverse.fbx">
+      <Name>Diane2_female_defeated_transition_1_reverse</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <None Include="Animations\JointAnimations.xml">
+      <Name>JointAnimations</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Compile Include="Models\FemaleOld\Textures\FrancisBacon\FemaleOldSearcherOutline01.dds">
+      <Name>FemaleOldSearcherOutline01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\Textures\FrancisBacon\FemaleYoungDefeated01.dds">
+      <Name>FemaleYoungDefeated01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\Textures\FrancisBacon\FemaleYoungSearcherOutline01.dds">
+      <Name>FemaleYoungSearcherOutline01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\Textures\FrancisBacon\FemaleYoungDefeatedOutline01.dds">
+      <Name>FemaleYoungDefeatedOutline01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\Textures\FrancisBacon\FemaleYoungSearcher01.dds">
+      <Name>FemaleYoungSearcher01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\Textures\FrancisBacon\MaleYoungDefeated01.dds">
+      <Name>MaleYoungDefeated01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\Textures\FrancisBacon\MaleYoungDefeatedOutline01.dds">
+      <Name>MaleYoungDefeatedOutline01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\Textures\FrancisBacon\MaleYoungSearcher01.dds">
+      <Name>MaleYoungSearcher01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\Textures\FrancisBacon\MaleYoungSearcherOutline01.dds">
+      <Name>MaleYoungSearcherOutline01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\FrancisBacon\MaleOldDefeated01.dds">
+      <Name>MaleOldDefeated01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\FrancisBacon\MaleOldDefeatedOutline01.dds">
+      <Name>MaleOldDefeatedOutline01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\FrancisBacon\MaleOldSearcher01.dds">
+      <Name>MaleOldSearcher01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\FrancisBacon\MaleOldSearcherOutline01.dds">
+      <Name>MaleOldSearcherOutline01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FrancisBacon\FemaleOldDefeated01.dds">
+      <Name>FemaleOldDefeated01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FrancisBacon\FemaleOldDefeatedOutline01.dds">
+      <Name>FemaleOldDefeatedOutline01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FrancisBacon\FemaleOldSearcher01.dds">
+      <Name>FemaleOldSearcher01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\FrancisBacon\FemaleMask.dds">
+      <Name>FemaleMask</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\FrancisBacon\MaleMask.dds">
+      <Name>MaleMask</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FrancisBacon\FemaleMidDefeated01.dds">
+      <Name>FemaleMidDefeated01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FrancisBacon\FemaleMidDefeatedOutline01.dds">
+      <Name>FemaleMidDefeatedOutline01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FrancisBacon\FemaleMidSearcher01.dds">
+      <Name>FemaleMidSearcher01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FrancisBacon\FemaleMidSearcherOutline01.dds">
+      <Name>FemaleMidSearcherOutline01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\SkinnedModelDeferredFrancisBacon.fx">
+      <Name>SkinnedModelDeferredFrancisBacon</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\FrancisBacon\MaleMidDefeated01.dds">
+      <Name>MaleMidDefeated01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\FrancisBacon\MaleMidDefeatedOutline01.dds">
+      <Name>MaleMidDefeatedOutline01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\FrancisBacon\MaleMidSearcher01.dds">
+      <Name>MaleMidSearcher01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\FrancisBacon\MaleMidSearcherOutline01.dds">
+      <Name>MaleMidSearcherOutline01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\ModelDeferredFrancisBacon.fx">
+      <Name>ModelDeferredFrancisBacon</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\female_old02.fbx">
+      <Name>female_old02</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\female_old03.fbx">
+      <Name>female_old03</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\female_old04.fbx">
+      <Name>female_old04</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\female_old05.fbx">
+      <Name>female_old05</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\gerard_male_defeated_stand_to_sit_2_reverse.fbx">
+      <Name>gerard_male_defeated_stand_to_sit_2_reverse</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\female_young03.fbx">
+      <Name>female_young03</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\Textures\FemaleYoungSearcher02.dds">
+      <Name>FemaleYoungSearcher02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\Textures\FemaleYoungSearcher03.dds">
+      <Name>FemaleYoungSearcher03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\Textures\FemaleYoungSedentary02.dds">
+      <Name>FemaleYoungSedentary02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\Textures\FemaleYoungSedentary03.dds">
+      <Name>FemaleYoungSedentary03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\Textures\FemaleYoungVanquished02.dds">
+      <Name>FemaleYoungVanquished02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\Textures\FemaleYoungVanquished03.dds">
+      <Name>FemaleYoungVanquished03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\female_young02.fbx">
+      <Name>female_young02</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\G-D_searcher_raises_head_of_standing_defeated_5_male.fbx">
+      <Name>G-D_searcher_raises_head_of_standing_defeated_5_male</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\G-F_searcher_bumps_standing_searcher_2_male.fbx">
+      <Name>G-F_searcher_bumps_standing_searcher_2_male</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\G-D_searcher_raises_head_of_defeated_5_male.fbx">
+      <Name>G-D_searcher_raises_head_of_defeated_5_male</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\Textures\FemaleYoungSedentary01.dds">
+      <Name>FemaleYoungSedentary01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\Textures\FemaleYoungVanquished01.dds">
+      <Name>FemaleYoungVanquished01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\G-D_sex1_10_male.fbx">
+      <Name>G-D_sex1_10_male</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\female_mid05.fbx">
+      <Name>female_mid05</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\female_mid01.fbx">
+      <Name>female_mid01</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\female_mid02.fbx">
+      <Name>female_mid02</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\female_mid03.fbx">
+      <Name>female_mid03</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\female_mid04.fbx">
+      <Name>female_mid04</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FemaleMidSearcher05.dds">
+      <Name>FemaleMidSearcher05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FemaleMidSedentary01.dds">
+      <Name>FemaleMidSedentary01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FemaleMidSedentary02.dds">
+      <Name>FemaleMidSedentary02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FemaleMidSedentary03.dds">
+      <Name>FemaleMidSedentary03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FemaleMidSedentary04.dds">
+      <Name>FemaleMidSedentary04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FemaleMidSedentary05.dds">
+      <Name>FemaleMidSedentary05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FemaleMidVanquished01.dds">
+      <Name>FemaleMidVanquished01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FemaleMidVanquished02.dds">
+      <Name>FemaleMidVanquished02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FemaleMidVanquished03.dds">
+      <Name>FemaleMidVanquished03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FemaleMidVanquished04.dds">
+      <Name>FemaleMidVanquished04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FemaleMidVanquished05.dds">
+      <Name>FemaleMidVanquished05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Normal Maps\FemaleMaskBlue02.dds">
+      <Name>FemaleMaskBlue02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FemaleOldSearcher02.dds">
+      <Name>FemaleOldSearcher02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FemaleOldSearcher03.dds">
+      <Name>FemaleOldSearcher03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FemaleOldSearcher04.dds">
+      <Name>FemaleOldSearcher04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FemaleOldSearcher05.dds">
+      <Name>FemaleOldSearcher05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FemaleOldSedentary01.dds">
+      <Name>FemaleOldSedentary01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FemaleOldSedentary02.dds">
+      <Name>FemaleOldSedentary02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FemaleOldSedentary03.dds">
+      <Name>FemaleOldSedentary03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FemaleOldSedentary04.dds">
+      <Name>FemaleOldSedentary04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FemaleOldSedentary05.dds">
+      <Name>FemaleOldSedentary05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FemaleOldVanquished01.dds">
+      <Name>FemaleOldVanquished01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FemaleOldVanquished02.dds">
+      <Name>FemaleOldVanquished02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FemaleOldVanquished03.dds">
+      <Name>FemaleOldVanquished03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FemaleOldVanquished04.dds">
+      <Name>FemaleOldVanquished04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FemaleOldVanquished05.dds">
+      <Name>FemaleOldVanquished05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Joint\Joint.fbx">
+      <Name>Joint</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\G-D_searcher_bumps_standing_searcher_3_male.fbx">
+      <Name>G-D_searcher_bumps_standing_searcher_3_male</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\G-D_searcher_raises_head_of_standing_defeated_4_male.fbx">
+      <Name>G-D_searcher_raises_head_of_standing_defeated_4_male</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\G-F_2walking_bump_front_1_male.fbx">
+      <Name>G-F_2walking_bump_front_1_male</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\G-F_2walking_bump_idle_bump_front_2_male.fbx">
+      <Name>G-F_2walking_bump_idle_bump_front_2_male</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\G-F_sex1_4_male.fbx">
+      <Name>G-F_sex1_4_male</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\G-F_2walking_bump_idle_bump_back_2_male.fbx">
+      <Name>G-F_2walking_bump_idle_bump_back_2_male</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\G-F_sex1_2_male.fbx">
+      <Name>G-F_sex1_2_male</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Joint\Joint.fbx">
+      <Name>Joint</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\FemaleMid\Textures\FrancisBacon\FemaleMidSedentary01.dds">
+      <Name>FemaleMidSedentary01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FrancisBacon\FemaleMidSedentaryOutline01.dds">
+      <Name>FemaleMidSedentaryOutline01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FrancisBacon\FemaleOldSedentary01.dds">
+      <Name>FemaleOldSedentary01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FrancisBacon\FemaleOldSedentaryOutline01.dds">
+      <Name>FemaleOldSedentaryOutline01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\Textures\FrancisBacon\FemaleYoungSedentary01.dds">
+      <Name>FemaleYoungSedentary01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\Textures\FrancisBacon\FemaleYoungSedentaryOutline01.dds">
+      <Name>FemaleYoungSedentaryOutline01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\FrancisBacon\MaleMidSedentary01.dds">
+      <Name>MaleMidSedentary01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\FrancisBacon\MaleMidSedentaryOutline01.dds">
+      <Name>MaleMidSedentaryOutline01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\FrancisBacon\MaleOldSedentary01.dds">
+      <Name>MaleOldSedentary01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\FrancisBacon\MaleOldSedentaryOutline01.dds">
+      <Name>MaleOldSedentaryOutline01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\Textures\FrancisBacon\MaleYoungSedentary01.dds">
+      <Name>MaleYoungSedentary01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\Textures\FrancisBacon\MaleYoungSedentaryOutline01.dds">
+      <Name>MaleYoungSedentaryOutline01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <None Include="TestJointMOCAPScene.xml">
+      <Name>TestJointMOCAPScene</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animations\Male\Gerard_Indian_File_Male_2_CLEAN.fbx">
+      <Name>Gerard_Indian_File_Male_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\Gerard_Indian_File_Male_3_CLEAN.fbx">
+      <Name>Gerard_Indian_File_Male_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Dianne_Female_Beating_Self_7_CLEAN.fbx">
+      <Name>Dianne_Female_Beating_Self_7_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Dianne_Indian_File_Female_2_CLEAN.fbx">
+      <Name>Dianne_Indian_File_Female_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Dianne_Inner_Female_facing_Out_clockwise_60_facing_In_1_CLEAN.fbx">
+      <Name>Dianne_Inner_Female_facing_Out_clockwise_60_facing_In_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Dianne_Female_Beating_Self_8_CLEAN.fbx">
+      <Name>Dianne_Female_Beating_Self_8_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Dianne_Indian_File_Female_3_CLEAN.fbx">
+      <Name>Dianne_Indian_File_Female_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Dianne_Inner_Female_facing_In_anti-clockwise_90_facing_Out_1_CLEAN.fbx">
+      <Name>Dianne_Inner_Female_facing_In_anti-clockwise_90_facing_Out_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Dianne_Inner_Female_facing_Out_anti-clockwise_90_facing_Out_1_CLEAN.fbx">
+      <Name>Dianne_Inner_Female_facing_Out_anti-clockwise_90_facing_Out_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Dianne_Inner_Female_facing_Out_transition_to_Outer_facing_out_3_CLEAN.fbx">
+      <Name>Dianne_Inner_Female_facing_Out_transition_to_Outer_facing_out_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Dianne_Outer_Female_facing_In_anti-clockwise_90_facing_Out_1_CLEAN.fbx">
+      <Name>Dianne_Outer_Female_facing_In_anti-clockwise_90_facing_Out_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Dianne_Outer_Female_facing_Out_anti-clockwise_90_facing_Out_5_CLEAN.fbx">
+      <Name>Dianne_Outer_Female_facing_Out_anti-clockwise_90_facing_Out_5_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Dianne_Outer_Female_facing_Out_transition_to_Inner_facing_out_1_CLEAN.fbx">
+      <Name>Dianne_Outer_Female_facing_Out_transition_to_Inner_facing_out_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\Gerard_Inner_Male_facing_Out_anti-clockwise_90_facing_Out_1_CLEAN.fbx">
+      <Name>Gerard_Inner_Male_facing_Out_anti-clockwise_90_facing_Out_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Dianne_Female_Beating_Self_10_CLEAN.fbx">
+      <Name>Dianne_Female_Beating_Self_10_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\Dianne_Outer_Female_facing_Out_clockwise_60_facing_In_2_CLEAN.fbx">
+      <Name>Dianne_Outer_Female_facing_Out_clockwise_60_facing_In_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\Gerard_Male_Beating_Self_10_CLEAN.fbx">
+      <Name>Gerard_Male_Beating_Self_10_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\Gerard_Male_Beating_Self_1_CLEAN.fbx">
+      <Name>Gerard_Male_Beating_Self_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\Gerard_Male_Beating_Self_7_CLEAN.fbx">
+      <Name>Gerard_Male_Beating_Self_7_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\Gerard_Outer_Male_facing_Out_anti-clockwise_90_facing_Out_1_CLEAN.fbx">
+      <Name>Gerard_Outer_Male_facing_Out_anti-clockwise_90_facing_Out_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\Gerard_Outer_Male_facing_Out_clockwise_60_facing_In_3_CLEAN.fbx">
+      <Name>Gerard_Outer_Male_facing_Out_clockwise_60_facing_In_3_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\male_mid01_high.fbx">
+      <Name>male_mid01_high</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\female_young01_high.fbx">
+      <Name>female_young01_high</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\female_young02_high.fbx">
+      <Name>female_young02_high</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\female_young03_high.fbx">
+      <Name>female_young03_high</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\female_old01_high.fbx">
+      <Name>female_old01_high</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\female_old02_high.fbx">
+      <Name>female_old02_high</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\female_old03_high.fbx">
+      <Name>female_old03_high</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\female_old04_high.fbx">
+      <Name>female_old04_high</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\female_old05_high.fbx">
+      <Name>female_old05_high</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\female_mid01_high.fbx">
+      <Name>female_mid01_high</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\female_mid02_high.fbx">
+      <Name>female_mid02_high</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\female_mid03_high.fbx">
+      <Name>female_mid03_high</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\female_mid04_high.fbx">
+      <Name>female_mid04_high</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\female_mid05_high.fbx">
+      <Name>female_mid05_high</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\male_mid02_high.fbx">
+      <Name>male_mid02_high</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\male_mid03_high.fbx">
+      <Name>male_mid03_high</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\male_mid04_high.fbx">
+      <Name>male_mid04_high</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\male_mid05_high.fbx">
+      <Name>male_mid05_high</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\male_old01_high.FBX">
+      <Name>male_old01_high</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\male_old02_high.FBX">
+      <Name>male_old02_high</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\male_old03_high.FBX">
+      <Name>male_old03_high</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\male_old04_high.FBX">
+      <Name>male_old04_high</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\male_old05_high.FBX">
+      <Name>male_old05_high</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\male_young01_high.fbx">
+      <Name>male_young01_high</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\male_young02_high.fbx">
+      <Name>male_young02_high</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\male_young03_high.fbx">
+      <Name>male_young03_high</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\Gerard_Inner_Male_facing_Out_transition_to_Outer_facing_out_4_CLEAN.fbx">
+      <Name>Gerard_Inner_Male_facing_Out_transition_to_Outer_facing_out_4_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\Gerard_Outer_Male_facing_Out_transition_to_Inner_facing_out_1_CLEAN.fbx">
+      <Name>Gerard_Outer_Male_facing_Out_transition_to_Inner_facing_out_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\Gerard_Inner_Male_facing_Out_clockwise_60_facing_In_1_CLEAN.fbx">
+      <Name>Gerard_Inner_Male_facing_Out_clockwise_60_facing_In_1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\Gerard_Inner_Male_facing_In_anti-clockwise_90_facing_Out1_CLEAN.fbx">
+      <Name>Gerard_Inner_Male_facing_In_anti-clockwise_90_facing_Out1_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\Gerard_Outer_Male_facing_In_anti-clockwise_90_facing_Out_2_CLEAN.fbx">
+      <Name>Gerard_Outer_Male_facing_In_anti-clockwise_90_facing_Out_2_CLEAN</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Female\G-F_searcher_bumps_squatting_searcher_2_female.fbx">
+      <Name>G-F_searcher_bumps_squatting_searcher_2_female</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\Male\G-F_searcher_bumps_squatting_searcher_2_male.fbx">
+      <Name>G-F_searcher_bumps_squatting_searcher_2_male</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedNormalMappedModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FrancisBacon\FemaleMidDefeated02.dds">
+      <Name>FemaleMidDefeated02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FrancisBacon\FemaleMidDefeated03.dds">
+      <Name>FemaleMidDefeated03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FrancisBacon\FemaleMidDefeated04.dds">
+      <Name>FemaleMidDefeated04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FrancisBacon\FemaleMidDefeated05.dds">
+      <Name>FemaleMidDefeated05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FrancisBacon\FemaleMidSearcher02.dds">
+      <Name>FemaleMidSearcher02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FrancisBacon\FemaleMidSearcher03.dds">
+      <Name>FemaleMidSearcher03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FrancisBacon\FemaleMidSearcher04.dds">
+      <Name>FemaleMidSearcher04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleMid\Textures\FrancisBacon\FemaleMidSearcher05.dds">
+      <Name>FemaleMidSearcher05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FrancisBacon\FemaleOldDefeated02.dds">
+      <Name>FemaleOldDefeated02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FrancisBacon\FemaleOldDefeated03.dds">
+      <Name>FemaleOldDefeated03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FrancisBacon\FemaleOldDefeated04.dds">
+      <Name>FemaleOldDefeated04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FrancisBacon\FemaleOldDefeated05.dds">
+      <Name>FemaleOldDefeated05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FrancisBacon\FemaleOldSearcher02.dds">
+      <Name>FemaleOldSearcher02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FrancisBacon\FemaleOldSearcher03.dds">
+      <Name>FemaleOldSearcher03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FrancisBacon\FemaleOldSearcher04.dds">
+      <Name>FemaleOldSearcher04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleOld\Textures\FrancisBacon\FemaleOldSearcher05.dds">
+      <Name>FemaleOldSearcher05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\Textures\FrancisBacon\FemaleYoungDefeated02.dds">
+      <Name>FemaleYoungDefeated02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\Textures\FrancisBacon\FemaleYoungDefeated03.dds">
+      <Name>FemaleYoungDefeated03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\Textures\FrancisBacon\FemaleYoungSearcher02.dds">
+      <Name>FemaleYoungSearcher02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\FemaleYoung\Textures\FrancisBacon\FemaleYoungSearcher03.dds">
+      <Name>FemaleYoungSearcher03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\FrancisBacon\MaleMidDefeated02.dds">
+      <Name>MaleMidDefeated02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\FrancisBacon\MaleMidDefeated03.dds">
+      <Name>MaleMidDefeated03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\FrancisBacon\MaleMidDefeated04.dds">
+      <Name>MaleMidDefeated04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\FrancisBacon\MaleMidDefeated05.dds">
+      <Name>MaleMidDefeated05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\FrancisBacon\MaleMidSearcher02.dds">
+      <Name>MaleMidSearcher02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\FrancisBacon\MaleMidSearcher03.dds">
+      <Name>MaleMidSearcher03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\FrancisBacon\MaleMidSearcher04.dds">
+      <Name>MaleMidSearcher04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleMid\Textures\FrancisBacon\MaleMidSearcher05.dds">
+      <Name>MaleMidSearcher05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\FrancisBacon\MaleOldDefeated02.dds">
+      <Name>MaleOldDefeated02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\FrancisBacon\MaleOldDefeated03.dds">
+      <Name>MaleOldDefeated03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\FrancisBacon\MaleOldDefeated04.dds">
+      <Name>MaleOldDefeated04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\FrancisBacon\MaleOldDefeated05.dds">
+      <Name>MaleOldDefeated05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\FrancisBacon\MaleOldSearcher02.dds">
+      <Name>MaleOldSearcher02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\FrancisBacon\MaleOldSearcher03.dds">
+      <Name>MaleOldSearcher03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\FrancisBacon\MaleOldSearcher04.dds">
+      <Name>MaleOldSearcher04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleOld\Textures\FrancisBacon\MaleOldSearcher05.dds">
+      <Name>MaleOldSearcher05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\Textures\FrancisBacon\MaleYoungDefeated02.dds">
+      <Name>MaleYoungDefeated02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\Textures\FrancisBacon\MaleYoungDefeated03.dds">
+      <Name>MaleYoungDefeated03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\Textures\FrancisBacon\MaleYoungSearcher02.dds">
+      <Name>MaleYoungSearcher02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\MaleYoung\Textures\FrancisBacon\MaleYoungSearcher03.dds">
+      <Name>MaleYoungSearcher03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <None Include="SceneWithAllSearchers.xml">
+      <Name>SceneWithAllSearchers</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Compile Include="Shaders\DeferredRendererAA.fx">
+      <Name>DeferredRendererAA</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\Bitmaps\Network\1.bmp">
+      <Name>1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Bitmaps\Network\2.bmp">
+      <Name>2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Bitmaps\Network\3.bmp">
+      <Name>3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Bitmaps\Network\4.bmp">
+      <Name>4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Bitmaps\Network\5.bmp">
+      <Name>5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Bitmaps\Network\6.bmp">
+      <Name>6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Bitmaps\Network\7.bmp">
+      <Name>7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Bitmaps\Network\8.bmp">
+      <Name>8</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\_reactor_stereo_align_3_new_righandLeft.bmp">
+      <Name>_reactor_stereo_align_3_new_righandLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TorchRanges.xml">
+      <Name>TorchRanges</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SoundSettings.xml">
+      <Name>SoundSettings</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DebugAudioScene.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>DebugAudioScene</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\v2.0\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
